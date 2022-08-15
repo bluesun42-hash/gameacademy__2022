@@ -13,6 +13,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "throw snow",
+                    "type": "Button",
+                    "id": "28d78177-94ed-4068-a24d-51ee129bcc2c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -70,6 +79,17 @@
                     "action": "move",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "ca8ee14c-2a18-439d-b1ce-71e0db15a122",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "throw snow",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
