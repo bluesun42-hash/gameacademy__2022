@@ -129,6 +129,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: f19d5a76-97cd-4378-8218-1e6540a51a03
     m_ActionName: target/move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7023532500092658058}
+        m_TargetAssemblyTypeName: moveTarget, Assembly-CSharp
+        m_MethodName: onDelete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 93f1b0d8-7888-43d6-b9df-fecb6eda7fa2
+    m_ActionName: target/delete[/Keyboard/r]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: target
@@ -150,6 +166,7 @@ MonoBehaviour:
   direction: {x: 0, y: 0}
   speed: 2
   isAiming: 0
+  colliderTarget: {fileID: 0}
   rb: {fileID: 2568104032628305612}
 --- !u!60 &6201522338029980314
 PolygonCollider2D:

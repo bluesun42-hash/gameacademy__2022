@@ -12,9 +12,9 @@ public class player2Move : MonoBehaviour
 
     private void FixedUpdate()
     {
+        rb.velocity = direction * speed * Time.fixedDeltaTime;
         if (direction != Vector2.zero)
         {
-            rb.velocity = direction * speed * Time.fixedDeltaTime;
             Quaternion toRotation = Quaternion.LookRotation(Vector3.forward, direction);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed);
         }

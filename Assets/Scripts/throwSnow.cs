@@ -8,11 +8,14 @@ public class throwSnow : MonoBehaviour
     public bool isThrowingSnow;
     public GameObject target;
     public GameObject targetSpawn;
+    public bool alreadySpawned =false;
    public void onThrowSnow(InputAction.CallbackContext ctx) {
-        if (ctx.started)
+        if (ctx.started && alreadySpawned==false)
         {
             isThrowingSnow = true;
+            alreadySpawned = true;
             Instantiate(target, targetSpawn.transform);
+
         }
     }
 }

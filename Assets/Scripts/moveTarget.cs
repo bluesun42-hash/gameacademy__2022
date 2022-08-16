@@ -8,7 +8,7 @@ public class moveTarget : MonoBehaviour
     public throwSnow throwSnowScript;
     public Vector2 direction;
     public int speed;
-    public bool isAiming;
+
     public Collider2D colliderTarget;
   
     public Rigidbody2D rb;
@@ -43,8 +43,14 @@ public class moveTarget : MonoBehaviour
     {
         if (throwSnowScript.isThrowingSnow)
         {
-            isAiming = true;
+            
           direction = ctx.ReadValue<Vector2>();
         }
+    }
+ public void onDelete()
+    {
+        throwSnowScript.alreadySpawned = false;
+        throwSnowScript.isThrowingSnow = false;
+        Destroy(gameObject);
     }
 }
