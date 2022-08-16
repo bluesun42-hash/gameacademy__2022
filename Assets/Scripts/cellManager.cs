@@ -5,8 +5,9 @@ using UnityEngine;
 public class cellManager : MonoBehaviour
 {
     public bool isEmpty = true;
-    private void Start()
+    public void Start()
     {
         isEmpty = true;
     }
+    
 }
