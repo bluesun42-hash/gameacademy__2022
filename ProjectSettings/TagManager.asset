@@ -12,6 +12,8 @@ TagManager:
   - left
   - right
   - down
+  - gridManager
+  - gridChecker
   layers:
   - Default
   - TransparentFX

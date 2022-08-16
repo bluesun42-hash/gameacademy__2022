@@ -105,6 +105,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "throw snow away",
+                    "type": "Button",
+                    "id": "9e8f95e2-3314-461e-9411-4435517eb8c0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -162,6 +171,17 @@
                     "action": "move",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "d388ac0b-1f36-4e95-991c-f165a062af35",
+                    "path": "<Keyboard>/rightShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "throw snow away",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

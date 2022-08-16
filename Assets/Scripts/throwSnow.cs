@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class throwSnow : MonoBehaviour
 {
+    //player1(lanceur de boule sde neige)
     public bool isThrowingSnow;
     public GameObject target;
     public GameObject targetSpawn;
@@ -15,7 +16,6 @@ public class throwSnow : MonoBehaviour
             isThrowingSnow = true;
             alreadySpawned = true;
             Instantiate(target, targetSpawn.transform);
-
         }
     }
 }
