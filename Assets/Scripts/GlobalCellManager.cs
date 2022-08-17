@@ -22,7 +22,6 @@ public class GlobalCellManager : MonoBehaviour
     private void FixedUpdate()
     {
         percentageOfFull = (float)fullCells / (float)cellAmount;
-        Debug.Log(percentageOfFull + "%");
-        Debug.Log(fullCells);
+        
     }
 }
