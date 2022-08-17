@@ -29,24 +29,43 @@ public class WeaponController : MonoBehaviour
   {
     if (ctx.started)
     {
-      switch (playerIndex)
-      {
-        case 0:
+      if (isInAction) {
+        switch(playerIndex) {
+          case 0: 
           {
-            if (!isTargetSpawned)
+            isTargetSpawned = false;
+            isInAction = false;
+            if (cellManager.isEmpty)
+            {
+              globalCellManager.fullCells++;
+              cellManager.isEmpty = false;
+            }
+            Destroy(GameObject.FindGameObjectWithTag("target"));
+            break;
+          }
+        }
+      }
+      else
+      {
+        switch (playerIndex)
+        {
+          case 0:
+            {
+              if (!isTargetSpawned)
+              {
+                isInAction = true;
+                isTargetSpawned = true;
+                Instantiate(targetPrefab, targetSpawn.transform);
+              }
+              break;
+            }
+          case 1:
             {
               isInAction = true;
-              isTargetSpawned = true;
-              Instantiate(targetPrefab, targetSpawn.transform);
+              StartCoroutine(ThrowingSnow());
+              break;
             }
-            break;
-          }
-        case 1:
-          {
-            isInAction = true;
-            StartCoroutine(ThrowingSnow());
-            break;
-          }
+        }
       }
     }
 

@@ -30,11 +30,11 @@ public class PlayerController : MonoBehaviour
     else
     {
       rb.velocity = Vector2.zero;
+      GameObject.FindGameObjectWithTag("target").GetComponent<Rigidbody2D>().velocity = direction * speed * Time.fixedDeltaTime;
     }
   }
   public void OnMove(InputAction.CallbackContext ctx)
   {
-    Debug.Log("OnMove from PC");
     direction = ctx.ReadValue<Vector2>();
   }
 }
