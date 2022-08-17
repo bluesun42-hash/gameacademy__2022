@@ -2,10 +2,14 @@ using UnityEngine.Audio;
 using System.Collections;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
 public class MenuAudioManager : MonoBehaviour
 {
     public Sound[] sounds;
+    public Slider MenuSlider;
+    AudioSource audioSource;
+    public GameObject GameObject;
 
     void Awake()
     {
@@ -17,6 +21,12 @@ public class MenuAudioManager : MonoBehaviour
             s.source.volume = s.volume;
             s.source.pitch = 1;
         }
+    }
+
+    public void SlidUpDate()
+    {
+       audioSource = GameObject.GetComponent<AudioSource>();
+        audioSource.volume = MenuSlider.value;
     }
 
 
