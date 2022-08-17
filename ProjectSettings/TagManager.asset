@@ -14,6 +14,7 @@ TagManager:
   - down
   - gridManager
   - gridChecker
+  - globalCellManager
   layers:
   - Default
   - TransparentFX

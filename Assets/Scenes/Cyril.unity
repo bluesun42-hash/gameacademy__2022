@@ -169,6 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!61 &995046
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -241,6 +242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!61 &5537374
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -313,6 +315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!61 &41296682
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -385,6 +388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!61 &83231362
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -457,6 +461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!61 &137584930
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -529,6 +534,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!61 &159370782
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -601,6 +607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!61 &181743933
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -673,6 +680,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!61 &206828971
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -745,6 +753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!61 &258009747
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -998,6 +1007,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isStopped: 0
+  cellManagerScript: {fileID: 0}
+  lastCell: {fileID: 0}
+  globalCellManagerScript: {fileID: 0}
 --- !u!1 &296083372
 GameObject:
   m_ObjectHideFlags: 0
@@ -1276,6 +1288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!61 &421698785
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1348,6 +1361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!61 &441941978
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1420,6 +1434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!61 &596262434
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1492,6 +1507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!61 &603872636
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1564,6 +1580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!61 &623868195
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1866,6 +1883,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!61 &740250315
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2018,6 +2036,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!61 &845893723
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2090,6 +2109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!61 &885054839
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2213,6 +2233,89 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &949435754
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 949435755}
+  - component: {fileID: 949435756}
+  m_Layer: 0
+  m_Name: globalCellManager
+  m_TagString: globalCellManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &949435755
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949435754}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.4092581, y: 3.172636, z: -0.031851657}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &949435756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949435754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 212355cf9501afd48acb6f00e9d9836b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cells:
+  - {fileID: 2017452390}
+  - {fileID: 206828968}
+  - {fileID: 1529504727}
+  - {fileID: 1870356925}
+  - {fileID: 1655887193}
+  - {fileID: 1819769641}
+  - {fileID: 83231359}
+  - {fileID: 421698782}
+  - {fileID: 1418418198}
+  - {fileID: 845893720}
+  - {fileID: 1664081105}
+  - {fileID: 1349755619}
+  - {fileID: 1418088459}
+  - {fileID: 603872633}
+  - {fileID: 41296679}
+  - {fileID: 1895731681}
+  - {fileID: 159370779}
+  - {fileID: 441941975}
+  - {fileID: 596262431}
+  - {fileID: 995043}
+  - {fileID: 137584927}
+  - {fileID: 1584197896}
+  - {fileID: 5537371}
+  - {fileID: 258009744}
+  - {fileID: 740250312}
+  - {fileID: 623868192}
+  - {fileID: 1418421769}
+  - {fileID: 181743930}
+  - {fileID: 2001723083}
+  - {fileID: 1163300968}
+  - {fileID: 1475427887}
+  - {fileID: 1188521486}
+  - {fileID: 885054836}
+  - {fileID: 1421394360}
+  - {fileID: 1233852300}
+  cellAmount: 0
+  fullCells: 0
+  percentageOfFull: 0
 --- !u!1 &1005397538
 GameObject:
   m_ObjectHideFlags: 0
@@ -2512,6 +2615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!61 &1163300971
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2584,6 +2688,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!61 &1188521489
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2658,6 +2763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!114 &1233852303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2671,6 +2777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!61 &1233852304
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2795,6 +2902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!61 &1349755622
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2960,6 +3068,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!61 &1418088462
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3032,6 +3141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!61 &1418418201
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3104,6 +3214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!61 &1418421772
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3269,6 +3380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!61 &1421394363
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3341,6 +3453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!61 &1475427890
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3502,6 +3615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!61 &1529504730
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3574,6 +3688,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!61 &1584197899
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3646,6 +3761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!61 &1655887196
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3718,6 +3834,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!61 &1664081108
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3790,6 +3907,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!61 &1819769644
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3862,6 +3980,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!61 &1870356928
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4018,6 +4137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!61 &1895731684
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4090,6 +4210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!61 &2001723086
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4149,6 +4270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
+  throwSnowAwayScript: {fileID: 0}
 --- !u!61 &2017452393
 BoxCollider2D:
   m_ObjectHideFlags: 0
