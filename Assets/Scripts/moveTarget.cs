@@ -13,13 +13,15 @@ public class moveTarget : MonoBehaviour
     public bool instBall = false;
     public cellManager cellManagerScript;
     public Transform gridManager;
-   
-   
+    public GlobalCellManager globalCellManagerScript;
+
+
     private void Start()
     {
         throwSnowScript = GameObject.FindGameObjectWithTag("player1").GetComponent<throwSnow>();
         colliderTarget = GameObject.FindGameObjectWithTag("target").GetComponent<Collider2D>();
-       gridManager = GameObject.FindGameObjectWithTag("gridManager").GetComponent<Transform>();
+        gridManager = GameObject.FindGameObjectWithTag("gridManager").GetComponent<Transform>();
+        globalCellManagerScript = GameObject.FindGameObjectWithTag("globalCellManager").GetComponent<GlobalCellManager>();
       
     }
 
@@ -64,7 +66,12 @@ public class moveTarget : MonoBehaviour
     {
         throwSnowScript.alreadySpawned = false;
         throwSnowScript.isThrowingSnow = false;
-        cellManagerScript.isEmpty = false;
+
+        if (cellManagerScript.isEmpty)
+        {
+            globalCellManagerScript.fullCells++;
+            cellManagerScript.isEmpty = false;
+        }
         Destroy(gameObject);
     }
 }
