@@ -59,7 +59,8 @@ public class WeaponController : MonoBehaviour
                             {
                                 isInAction = true;
                                 isTargetSpawned = true;
-                                Instantiate(targetPrefab, targetSpawn.transform);
+                                GameObject spawned = Instantiate(targetPrefab, targetSpawn.transform);
+                                playerController.target = spawned;
                             }
                             break;
                         }

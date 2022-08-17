@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public float rotationSpeed;
     public int playerIndex;
     public WeaponController weaponController;
+    public GameObject target;
 
     public int GetPlayerIndex()
     {
@@ -30,7 +31,6 @@ public class PlayerController : MonoBehaviour
         else
         {
             rb.velocity = Vector2.zero;
-            GameObject target = GameObject.FindGameObjectWithTag("target");
             if (target) target.GetComponent<Rigidbody2D>().velocity = direction * speed * Time.fixedDeltaTime;
         }
     }
