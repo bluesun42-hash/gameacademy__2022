@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -14,5 +14,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cyril.unity
     guid: f56de4d236abf244893b6d2193570188
+  - enabled: 1
+    path: Assets/Scenes/Alex.unity
+    guid: 3082ac8560bdc14449cd7f865fabf24a
+  - enabled: 1
+    path: Assets/Scenes/finalScene.unity
+    guid: 8e2e64dd2a159f543ba56a2e908ad675
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 7dde9cc9007eb3a4c8349c486335a013, type: 2}

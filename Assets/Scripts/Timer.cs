@@ -2,14 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class Timer : MonoBehaviour
 {
-    public float timeValue = 90;
+    public float timeValue ;
     public int seconds;
     public int minutes;
     public Text timeText;
+    static public string winner;
+    public GlobalCellManager GlobalCellManagerScript;
+   
 
+    private void Start()
+    {
+        
+        timeValue = 20;
+    }
     private void FixedUpdate()
     {
         if (timeValue > 0)
@@ -24,5 +34,18 @@ public class Timer : MonoBehaviour
         minutes = Mathf.FloorToInt(timeValue)/60;
         seconds = Mathf.FloorToInt(timeValue - 60 * minutes);
         timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        if (timeValue <= 0)
+        {
+            SceneManager.LoadScene("finalScene");
+            if(GlobalCellManagerScript.percentageOfFull >= 0.5f)
+            {
+                winner = "joueur 1";
+            }else
+            {
+                winner = "joueur 2";
+            }
+        }
     }
+    
+
 }
