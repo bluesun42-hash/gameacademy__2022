@@ -15,6 +15,7 @@ public class WeaponController : MonoBehaviour
   public bool isTargetSpawned = false;
   public GameObject targetPrefab;
   public GameObject targetSpawn;
+  public PlayerController playerController;
 
   private void Start()
   {

@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
     }
     else
     {
-      direction = Vector2.zero;
+      rb.velocity = Vector2.zero;
     }
   }
   public void OnMove(InputAction.CallbackContext ctx)
