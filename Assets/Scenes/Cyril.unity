@@ -4131,6 +4131,7 @@ MonoBehaviour:
   seconds: 0
   minutes: 0
   timeText: {fileID: 1569577927}
+  GlobalCellManagerScript: {fileID: 949435756}
 --- !u!1 &1819769641
 GameObject:
   m_ObjectHideFlags: 0

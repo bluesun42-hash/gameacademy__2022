@@ -11,6 +11,8 @@ public class Timer : MonoBehaviour
     public int seconds;
     public int minutes;
     public Text timeText;
+    static public string winner;
+    public GlobalCellManager GlobalCellManagerScript;
    
 
     private void Start()
@@ -37,6 +39,13 @@ public class Timer : MonoBehaviour
         if (timeValue <= 0)
         {
             SceneManager.LoadScene("finalScene");
+            if(GlobalCellManagerScript.percentageOfFull >= 0.5f)
+            {
+                winner = "joueur 1";
+            }else
+            {
+                winner = "joueur 2";
+            }
         }
     }
     
