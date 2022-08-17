@@ -1,23 +1,23 @@
 {
-    "name": "player2",
+    "name": "Controls",
     "maps": [
         {
-            "name": "player2",
-            "id": "eccb4edf-6008-4d08-bb23-9e2c99c7b4db",
+            "name": "Player",
+            "id": "56ff2496-6c46-40ef-b997-3a32789fea38",
             "actions": [
                 {
-                    "name": "move",
+                    "name": "Move",
                     "type": "Value",
-                    "id": "1e3029ef-eaef-4aa1-be0f-76c9ce9031dc",
+                    "id": "7bd41a41-86fc-466c-a71c-74e8eb81229b",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
                 },
                 {
-                    "name": "throw snow away",
+                    "name": "Action",
                     "type": "Button",
-                    "id": "6a0c7be4-9606-4787-8e7b-b047885dadc4",
+                    "id": "28d78177-94ed-4068-a24d-51ee129bcc2c",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -27,138 +27,205 @@
             "bindings": [
                 {
                     "name": "2D Vector",
-                    "id": "5f337a5f-683c-4d30-aa52-77d1122b3abc",
+                    "id": "8f19a407-6ec7-456b-939c-ef728566a6f9",
                     "path": "2DVector",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "move",
+                    "action": "Move",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "up",
-                    "id": "24c0686f-7eaf-4a59-b351-59384bdf47df",
-                    "path": "<Keyboard>/upArrow",
+                    "id": "677ffe4d-4856-4e27-8a43-a765d12bad5a",
+                    "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "move",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "down",
-                    "id": "6c1c915f-ad1c-496c-b292-8e7ccbcbb621",
-                    "path": "<Keyboard>/downArrow",
+                    "id": "f3127966-ebab-4f3c-a8cb-21b146597f36",
+                    "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "move",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "left",
-                    "id": "6add35b3-de33-48ca-ac5e-5d3eaa8af6ed",
-                    "path": "<Keyboard>/leftArrow",
+                    "id": "dc486237-a4f6-4fd8-ae3f-6fb936b18c4d",
+                    "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "move",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "right",
-                    "id": "daf2ce77-baba-405d-83c0-db4367d14d91",
-                    "path": "<Keyboard>/rightArrow",
+                    "id": "04e4d1ab-50f7-43b3-8c39-9e4c3a48de7c",
+                    "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "move",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "2D Vector",
-                    "id": "94186284-4b46-494e-b3a0-bbb7c61d97b1",
+                    "id": "04be8016-391e-4314-b761-48ca13cd2fa0",
                     "path": "2DVector",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "move",
+                    "action": "Move",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "up",
-                    "id": "f3986213-b4fa-47a5-9ca8-381901383ed5",
+                    "id": "ca218620-9305-4c1a-86d1-f037b4c83e8c",
                     "path": "<Gamepad>/leftStick/up",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "move",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "down",
-                    "id": "2bb1c5b2-ccce-40c7-89b9-85b1cb30d04b",
+                    "id": "34757d54-eb19-4ebc-b7d5-812fa04a31ad",
                     "path": "<Gamepad>/leftStick/down",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "move",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "left",
-                    "id": "3ef6d31b-c6ad-422a-a29d-7748c8ab6e0a",
+                    "id": "3e62c70d-a534-4116-a76b-0ca15e83bca8",
                     "path": "<Gamepad>/leftStick/left",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "move",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "right",
-                    "id": "b3fad75a-0aca-460f-913f-e0ef84393252",
+                    "id": "4f523560-7e91-408e-a3f5-7de15892b7f8",
                     "path": "<Gamepad>/leftStick/right",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "move",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "",
-                    "id": "93d559db-807f-45c6-80ee-77e3a14241b6",
-                    "path": "<Keyboard>/rightShift",
+                    "id": "ca8ee14c-2a18-439d-b1ce-71e0db15a122",
+                    "path": "<Keyboard>/f",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "throw snow away",
+                    "action": "Action",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "e13d6e56-b27c-47ec-aeb5-cffb1f8cdfa9",
+                    "id": "cad0201f-937e-4902-b505-59cccb7612df",
                     "path": "<Gamepad>/buttonWest",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "throw snow away",
+                    "action": "Action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Ui",
+            "id": "b525a817-8d48-4e78-a987-db4ef0318876",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "3f322c0d-6178-44ce-bdc0-e75d2e7f053d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "a0323889-6459-4f5a-a3ac-1a29ef385989",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3524eaee-930f-4f2c-bcd6-4b8c9f984183",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
             ]
         }
     ],
-    "controlSchemes": []
+    "controlSchemes": [
+        {
+            "name": "KBM",
+            "bindingGroup": "KBM",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Controller",
+            "bindingGroup": "Controller",
+            "devices": [
+                {
+                    "devicePath": "<Gamepad>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
 }

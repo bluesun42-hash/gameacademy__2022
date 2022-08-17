@@ -2,27 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class cellManager : MonoBehaviour
+public class CellManager : MonoBehaviour
 {
-    public bool isEmpty = true;
-    public throwSnowAway throwSnowAwayScript;
-    
-    public void Start()
+  public bool isEmpty = true;
+  public WeaponController weaponController;
+
+  public void Start()
+  {
+    weaponController = GameObject.FindGameObjectWithTag("player2").GetComponent<WeaponController>();
+    isEmpty = true;
+  }
+  private void OnTriggerEnter2D(Collider2D collision)
+  {
+    if (collision.transform.tag == "player2")
     {
-        throwSnowAwayScript = GameObject.FindGameObjectWithTag("player2").GetComponent<throwSnowAway>();
-        isEmpty = true;
+      weaponController.lastCell = gameObject;
+      weaponController.cellManager = transform.GetComponent<CellManager>();
     }
-    private void FixedUpdate()
-    {
-       
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.transform.tag== "player2")
-        {
-            throwSnowAwayScript.lastCell = gameObject;
-            throwSnowAwayScript.cellManagerScript = transform.GetComponent<cellManager>();
-        }
-    }
+  }
 
 }

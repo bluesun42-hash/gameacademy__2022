@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!61 &995046
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -242,7 +242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!61 &5537374
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -315,7 +315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!61 &41296682
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -342,6 +342,82 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.14, y: 0.187}
   m_EdgeRadius: 0
+--- !u!1 &80880424
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 80880426}
+  - component: {fileID: 80880425}
+  m_Layer: 0
+  m_Name: PlayerManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &80880425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80880424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 621567455fd1c4ceb811cc8a00b6a1a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NotificationBehavior: 0
+  m_MaxPlayerCount: 2
+  m_AllowJoining: 1
+  m_JoinBehavior: 0
+  m_PlayerJoinedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_PlayerLeftEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_JoinAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  m_PlayerPrefab: {fileID: 1768497437941921274, guid: 7448560a050ac4846bcb303390756582, type: 3}
+  m_SplitScreen: 0
+  m_MaintainAspectRatioInSplitScreen: 0
+  m_FixedNumberOfSplitScreens: -1
+  m_SplitScreenRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!4 &80880426
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80880424}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.0885553, y: -0.45403147, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &83231359
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,7 +464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!61 &83231362
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -461,7 +537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!61 &137584930
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -534,7 +610,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!61 &159370782
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -607,7 +683,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!61 &181743933
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -680,7 +756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!61 &206828971
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -753,7 +829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!61 &258009747
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -792,8 +868,7 @@ GameObject:
   - component: {fileID: 274546202}
   - component: {fileID: 274546201}
   - component: {fileID: 274546200}
-  - component: {fileID: 274546204}
-  - component: {fileID: 274546205}
+  - component: {fileID: 274546207}
   - component: {fileID: 274546206}
   m_Layer: 0
   m_Name: player2
@@ -907,85 +982,6 @@ Transform:
   m_Father: {fileID: 2039672152}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &274546204
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 274546199}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ecfdcac4eab06c4a8fe915388d87879, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 200
-  direction: {x: 0, y: 0}
-  rb: {fileID: 274546200}
-  rotationSpeed: 50
-  throwSnowAwayScript: {fileID: 274546206}
---- !u!114 &274546205
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 274546199}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 49d42c7c3a489b14ca3b3fee1257ff3f, type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 274546204}
-        m_TargetAssemblyTypeName: player2Move, Assembly-CSharp
-        m_MethodName: onMove
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 1e3029ef-eaef-4aa1-be0f-76c9ce9031dc
-    m_ActionName: player2/move[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow,/XInputControllerWindows/leftStick/up,/XInputControllerWindows/leftStick/down,/XInputControllerWindows/leftStick/left,/XInputControllerWindows/leftStick/right]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 274546206}
-        m_TargetAssemblyTypeName: throwSnowAway, Assembly-CSharp
-        m_MethodName: onThrowSnowAway
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 6a0c7be4-9606-4787-8e7b-b047885dadc4
-    m_ActionName: player2/throw snow away[/Keyboard/rightShift,/XInputControllerWindows/buttonWest]
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: player2
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!114 &274546206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -995,13 +991,35 @@ MonoBehaviour:
   m_GameObject: {fileID: 274546199}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11299c12ca3d3f047ae81255f7533806, type: 3}
+  m_Script: {fileID: 11500000, guid: 35914f305f8104037a337a2a07d632a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isStopped: 0
-  cellManagerScript: {fileID: 0}
+  cellManager: {fileID: 0}
   lastCell: {fileID: 0}
-  globalCellManagerScript: {fileID: 0}
+  playerIndex: 1
+  isInAction: 0
+  isTargetSpawned: 0
+  targetPrefab: {fileID: 0}
+  targetSpawn: {fileID: 0}
+--- !u!114 &274546207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274546199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c58e6afc5d184482cb4ac6481e1b4762, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  direction: {x: 0, y: 0}
+  rb: {fileID: 274546200}
+  rotationSpeed: 0
+  playerIndex: 1
+  weaponController: {fileID: 274546206}
 --- !u!1 &296083372
 GameObject:
   m_ObjectHideFlags: 0
@@ -1219,7 +1237,6 @@ GameObject:
   m_Component:
   - component: {fileID: 373929896}
   - component: {fileID: 373929897}
-  - component: {fileID: 373929901}
   - component: {fileID: 373929902}
   m_Layer: 0
   m_Name: left
@@ -1269,18 +1286,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.058018684, y: 1}
   m_EdgeRadius: 0
---- !u!114 &373929901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 373929895}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f95815d28c388d14c9695c890d66b2f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &373929902
 Rigidbody2D:
   serializedVersion: 4
@@ -1348,7 +1353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!61 &421698785
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1421,7 +1426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!61 &441941978
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1574,7 +1579,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!61 &596262434
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1647,7 +1652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!61 &603872636
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1720,7 +1725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!61 &623868195
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1760,7 +1765,6 @@ GameObject:
   - component: {fileID: 687703052}
   - component: {fileID: 687703051}
   - component: {fileID: 687703056}
-  - component: {fileID: 687703055}
   - component: {fileID: 687703057}
   m_Layer: 0
   m_Name: player1
@@ -1874,76 +1878,6 @@ Transform:
   m_Father: {fileID: 2039672152}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &687703055
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 687703050}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: ecb261fe50ce6e74396823a0e599f899, type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 687703056}
-        m_TargetAssemblyTypeName: player1Move, Assembly-CSharp
-        m_MethodName: onMove
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 7bd41a41-86fc-466c-a71c-74e8eb81229b
-    m_ActionName: player1/move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 9396d6da-f68f-410a-aeae-600427f456ec
-    m_ActionName: player2/move[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 687703057}
-        m_TargetAssemblyTypeName: throwSnow, Assembly-CSharp
-        m_MethodName: onThrowSnow
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 28d78177-94ed-4068-a24d-51ee129bcc2c
-    m_ActionName: player1/throw snow[/Keyboard/f]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 9e8f95e2-3314-461e-9411-4435517eb8c0
-    m_ActionName: player2/throw snow away[/Keyboard/rightShift]
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: player1
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!114 &687703056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1953,14 +1887,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 687703050}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a550a8bbd42bf334b808cbb47e44ee75, type: 3}
+  m_Script: {fileID: 11500000, guid: c58e6afc5d184482cb4ac6481e1b4762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 200
+  speed: 0
   direction: {x: 0, y: 0}
   rb: {fileID: 687703051}
-  rotationSpeed: 50
-  throwSnowScript: {fileID: 687703057}
+  rotationSpeed: 0
+  playerIndex: 0
+  weaponController: {fileID: 687703057}
 --- !u!114 &687703057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1970,13 +1905,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 687703050}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef60cab384560b0469450d15b7c40966, type: 3}
+  m_Script: {fileID: 11500000, guid: 35914f305f8104037a337a2a07d632a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isThrowingSnow: 0
-  target: {fileID: 8594266626563220174, guid: 507c309ea316aa345a08d332ef06c496, type: 3}
+  isStopped: 0
+  cellManager: {fileID: 0}
+  lastCell: {fileID: 0}
+  playerIndex: 0
+  isInAction: 0
+  isTargetSpawned: 0
+  targetPrefab: {fileID: 8594266626563220174, guid: 507c309ea316aa345a08d332ef06c496, type: 3}
   targetSpawn: {fileID: 926936197}
-  alreadySpawned: 0
 --- !u!1 &740250312
 GameObject:
   m_ObjectHideFlags: 0
@@ -2023,7 +1962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!61 &740250315
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2176,7 +2115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!61 &845893723
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2249,7 +2188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!61 &885054839
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2755,7 +2694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!61 &1163300971
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2828,7 +2767,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!61 &1188521489
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2903,7 +2842,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!114 &1233852303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2917,7 +2856,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!61 &1233852304
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3042,7 +2981,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!61 &1349755622
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3079,7 +3018,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1371889595}
   - component: {fileID: 1371889597}
-  - component: {fileID: 1371889596}
   - component: {fileID: 1371889598}
   m_Layer: 0
   m_Name: top
@@ -3103,18 +3041,6 @@ Transform:
   m_Father: {fileID: 1529249586}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1371889596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1371889594}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f95815d28c388d14c9695c890d66b2f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1371889597
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3208,7 +3134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!61 &1418088462
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3281,7 +3207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!61 &1418418201
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3354,7 +3280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!61 &1418421772
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3391,7 +3317,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1420986339}
   - component: {fileID: 1420986341}
-  - component: {fileID: 1420986340}
   - component: {fileID: 1420986342}
   m_Layer: 0
   m_Name: right
@@ -3415,18 +3340,6 @@ Transform:
   m_Father: {fileID: 1529249586}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1420986340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1420986338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f95815d28c388d14c9695c890d66b2f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1420986341
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3520,7 +3433,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!61 &1421394363
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3593,7 +3506,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!61 &1475427890
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3755,7 +3668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!61 &1529504730
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3910,7 +3823,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!61 &1584197899
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3983,7 +3896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!61 &1655887196
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4056,7 +3969,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!61 &1664081108
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4177,7 +4090,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!61 &1819769644
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4250,7 +4163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!61 &1870356928
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4407,7 +4320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!61 &1895731684
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4480,7 +4393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!61 &2001723086
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4540,7 +4453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEmpty: 0
-  throwSnowAwayScript: {fileID: 0}
+  weaponController: {fileID: 0}
 --- !u!61 &2017452393
 BoxCollider2D:
   m_ObjectHideFlags: 0

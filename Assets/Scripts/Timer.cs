@@ -22,9 +22,7 @@ public class Timer : MonoBehaviour
         }
        
         minutes = Mathf.FloorToInt(timeValue)/60;
-        Debug.Log(minutes);
         seconds = Mathf.FloorToInt(timeValue - 60 * minutes);
-        Debug.Log(seconds);
         timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 }
