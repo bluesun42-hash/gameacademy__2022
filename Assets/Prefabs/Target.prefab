@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3534883766008295175}
   - component: {fileID: 5918469995937110617}
   m_Layer: 0
-  m_Name: target throw snow
+  m_Name: Target
   m_TagString: target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 3d9ee2f28c0104547937e78f7d3c1185, type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: ecb261fe50ce6e74396823a0e599f899, type: 3}
   m_NotificationBehavior: 2
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -116,8 +116,8 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7023532500092658058}
-        m_TargetAssemblyTypeName: moveTarget, Assembly-CSharp
-        m_MethodName: onMove
+        m_TargetAssemblyTypeName: TargetController, Assembly-CSharp
+        m_MethodName: OnMove
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -127,12 +127,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: f19d5a76-97cd-4378-8218-1e6540a51a03
-    m_ActionName: target/move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+    m_ActionId: 7bd41a41-86fc-466c-a71c-74e8eb81229b
+    m_ActionName: Player/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7023532500092658058}
-        m_TargetAssemblyTypeName: moveTarget, Assembly-CSharp
+        m_TargetAssemblyTypeName: TargetController, Assembly-CSharp
         m_MethodName: onDelete
         m_Mode: 1
         m_Arguments:
@@ -143,11 +143,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 93f1b0d8-7888-43d6-b9df-fecb6eda7fa2
-    m_ActionName: target/delete[/Keyboard/r]
+    m_ActionId: 28d78177-94ed-4068-a24d-51ee129bcc2c
+    m_ActionName: Player/Action[/Keyboard/f]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 3f322c0d-6178-44ce-bdc0-e75d2e7f053d
+    m_ActionName: Ui/New action[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: target
+  m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!114 &7023532500092658058
@@ -162,14 +166,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5824aeb8a338ceb4baf42055418de4f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  throwSnowScript: {fileID: 0}
   direction: {x: 0, y: 0}
   speed: 6
-  colliderTarget: {fileID: 0}
   rb: {fileID: 0}
   instBall: 0
-  cellManagerScript: {fileID: 0}
-  gridManager: {fileID: 0}
+  cellManager: {fileID: 0}
+  globalCellManager: {fileID: 0}
 --- !u!50 &3534883766008295175
 Rigidbody2D:
   serializedVersion: 4

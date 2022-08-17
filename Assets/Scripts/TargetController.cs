@@ -54,7 +54,7 @@ public class TargetController : MonoBehaviour
 
     transform.Translate(direction * speed * Time.fixedDeltaTime);
   }
-  public void onMove(InputAction.CallbackContext ctx)
+  public void OnMove(InputAction.CallbackContext ctx)
   {
     if (weaponController.isInAction)
     {
