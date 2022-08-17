@@ -936,7 +936,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: ecb261fe50ce6e74396823a0e599f899, type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: 49d42c7c3a489b14ca3b3fee1257ff3f, type: 3}
   m_NotificationBehavior: 2
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -949,10 +949,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 7bd41a41-86fc-466c-a71c-74e8eb81229b
-    m_ActionName: player1/move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 274546204}
@@ -967,12 +963,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 9396d6da-f68f-410a-aeae-600427f456ec
-    m_ActionName: player2/move[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 28d78177-94ed-4068-a24d-51ee129bcc2c
-    m_ActionName: player1/throw snow[/Keyboard/f]
+    m_ActionId: 1e3029ef-eaef-4aa1-be0f-76c9ce9031dc
+    m_ActionName: player2/move[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow,/XInputControllerWindows/leftStick/up,/XInputControllerWindows/leftStick/down,/XInputControllerWindows/leftStick/left,/XInputControllerWindows/leftStick/right]
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 274546206}
@@ -987,8 +979,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 9e8f95e2-3314-461e-9411-4435517eb8c0
-    m_ActionName: player2/throw snow away[/Keyboard/rightShift]
+    m_ActionId: 6a0c7be4-9606-4787-8e7b-b047885dadc4
+    m_ActionName: player2/throw snow away[/Keyboard/rightShift,/XInputControllerWindows/buttonWest]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: player2
