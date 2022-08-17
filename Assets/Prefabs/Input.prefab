@@ -107,7 +107,7 @@ MonoBehaviour:
     m_ActionId: 3f322c0d-6178-44ce-bdc0-e75d2e7f053d
     m_ActionName: Ui/New action[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
+  m_DefaultControlScheme: Controller
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
