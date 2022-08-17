@@ -6,7 +6,6 @@ using System;
 public class AudioManager : MonoBehaviour
 {
 
-    private float volumeIncrease = 0f;
     public Sound[] sounds;
 
     void Awake()
@@ -21,12 +20,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-
-    public void Play(string name)
-    {
-        Sound s = Array.Find(sounds, sound => sound.name == name);
-        s.source.Play();
-    }
+    private float volumeIncrease = 0f;
     
     public void IncreaseAndPlay(string name)
     {
@@ -41,12 +35,18 @@ public class AudioManager : MonoBehaviour
 
     private IEnumerator WaitAndIncreaseVolume(Sound s,float waitTime)
     {
-        for (int i = 0; i < 10; i++)
+        while(true)
         {
             s.source.volume += 0.01f;
             yield return new WaitForSeconds(waitTime);
         }
 
+    }
+
+    public void Play(string name)
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        s.source.Play();
     }
 
 
