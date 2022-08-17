@@ -18,7 +18,7 @@ public class Timer : MonoBehaviour
     private void Start()
     {
         
-        timeValue = 20;
+        timeValue = 90;
     }
     private void FixedUpdate()
     {
