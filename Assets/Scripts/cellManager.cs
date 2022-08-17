@@ -12,7 +12,6 @@ public class CellManager : MonoBehaviour
   {
     weaponController1 = GameObject.FindGameObjectWithTag("player1").GetComponent<WeaponController>();
     weaponController2 = GameObject.FindGameObjectWithTag("player2").GetComponent<WeaponController>();
-
     isEmpty = true;
   }
   private void OnTriggerEnter2D(Collider2D collision)
