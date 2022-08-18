@@ -12,16 +12,9 @@ public class GlobalCellManager : MonoBehaviour
     private void Start()
     {
         cellAmount = Cells.Length;
-       
-        
-        
-        
-
-        
     }
     private void FixedUpdate()
     {
-        percentageOfFull = (float)fullCells / (float)cellAmount;
-        
+        percentageOfFull = (float)fullCells / (float)cellAmount; 
     }
 }
