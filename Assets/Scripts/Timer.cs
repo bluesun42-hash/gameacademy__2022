@@ -17,8 +17,8 @@ public class Timer : MonoBehaviour
 
     private void Start()
     {
-        
-        timeValue = 90;
+        timeValue = PublicVar.GameDuration;
+        //timeValue = 20;
     }
     private void FixedUpdate()
     {
@@ -40,9 +40,11 @@ public class Timer : MonoBehaviour
             if(GlobalCellManagerScript.percentageOfFull >= 0.5f)
             {
                 winner = "joueur 1";
+                Debug.Log(winner);
             }else
             {
                 winner = "joueur 2";
+                Debug.Log(winner);
             }
         }
     }

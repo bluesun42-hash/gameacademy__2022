@@ -14,6 +14,10 @@ public class PlayerController : MonoBehaviour
     public WeaponController weaponController;
     public GameObject target;
     public roofCellManager roofCellManagerScript;
+    private Animator animator;
+    private void Start() {
+        animator = GetComponent<Animator>();
+    }
 
     public int GetPlayerIndex()
     {
@@ -25,6 +29,9 @@ public class PlayerController : MonoBehaviour
         {
            
             rb.velocity = direction * speed * Time.fixedDeltaTime;
+            animator.SetFloat("Horizontal", direction.x);
+            animator.SetFloat("Vertical", direction.y);
+            animator.SetFloat("Speed", direction.sqrMagnitude);
             if (direction != Vector2.zero)
             {
                 Quaternion toRotation = Quaternion.LookRotation(Vector3.forward, direction);

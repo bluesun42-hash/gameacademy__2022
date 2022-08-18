@@ -6,13 +6,18 @@ using UnityEngine.UI;
 
 public class MenuAudioManager : MonoBehaviour
 {
+    public Text text;
     public Sound[] sounds;
     public Slider MenuSlider;
     AudioSource audioSource;
     public GameObject GameObject;
 
+    string purcent;
+
     void Awake()
     {
+        
+
         foreach (Sound s in sounds)
         {
             s.source = gameObject.AddComponent<AudioSource>();
@@ -20,13 +25,20 @@ public class MenuAudioManager : MonoBehaviour
 
             s.source.volume = s.volume;
             s.source.pitch = 1;
+            s.source.loop = true;
         }
     }
 
     public void SlidUpDate()
     {
-       audioSource = GameObject.GetComponent<AudioSource>();
-        audioSource.volume = MenuSlider.value;
+        audioSource = GameObject.GetComponent<AudioSource>();
+        PublicVar.MusicVol = MenuSlider.value/100;
+        audioSource.volume = PublicVar.MusicVol;
+        purcent = MenuSlider.value + "%";
+
+        try { text.text = purcent; } catch { }
+
+        
     }
 
 
@@ -39,5 +51,7 @@ public class MenuAudioManager : MonoBehaviour
     void Start()
     {
         Play("MenuTheme");
+        Debug.Log(AudioListener.volume);
+        MenuSlider.value = PublicVar.MusicVol * 100;
     }
 }
