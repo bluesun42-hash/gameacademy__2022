@@ -5,7 +5,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    public int speed;
+    public int speed = 200;
+    public int targetSpeed = 300;
     public Vector2 direction;
     public Rigidbody2D rb;
     public float rotationSpeed;
@@ -33,7 +34,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             rb.velocity = Vector2.zero;
-            if (target) target.GetComponent<Rigidbody2D>().velocity = direction * speed * Time.fixedDeltaTime;
+            if (target) target.GetComponent<Rigidbody2D>().velocity = direction * targetSpeed * Time.fixedDeltaTime;
         }
     }
     public void OnMove(InputAction.CallbackContext ctx)
