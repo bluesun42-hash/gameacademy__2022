@@ -6,6 +6,8 @@ public class roofCellManager : MonoBehaviour
 {
     public WeaponController weaponControllerScript;
     public bool isEmpty;
+    public int coolDownTime;
+    
 
     private void Start()
     {
@@ -20,6 +22,12 @@ public class roofCellManager : MonoBehaviour
             Debug.Log("Enter in cell" + transform.name);
         }
     }
+   
 
+   public IEnumerator startCoolDown()
+    {
+        yield return new WaitForSeconds(coolDownTime);
+        isEmpty = false;
+    }
 
 }

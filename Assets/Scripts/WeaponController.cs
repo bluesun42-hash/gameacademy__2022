@@ -39,11 +39,13 @@ public class WeaponController : MonoBehaviour
                             isTargetSpawned = false;
                             isInAction = false;
                             Debug.Log(cellManager);
-                            if (cellManager.isEmpty)
+                            if (cellManager.isEmpty && !lastCellRoof.GetComponent<roofCellManager>().isEmpty)
                             {
                                 globalCellManager.fullCells++;
                                 cellManager.isEmpty = false;
                                 lastCellRoof.GetComponent<roofCellManager>().isEmpty = true;
+                                StartCoroutine(lastCellRoof.GetComponent<roofCellManager>().startCoolDown());
+                                
                             }
                             GameObject target = GameObject.FindGameObjectWithTag("target");
                             Debug.Log(target);
@@ -70,6 +72,7 @@ public class WeaponController : MonoBehaviour
                     case 1:
                         {
                             isInAction = true;
+                           
                             StartCoroutine(RemoveSnow());
                             break;
                         }

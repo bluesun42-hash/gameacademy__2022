@@ -648,6 +648,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponControllerScript: {fileID: 0}
   isEmpty: 0
+  coolDownTime: 0
 --- !u!61 &137731310
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -793,6 +794,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponControllerScript: {fileID: 0}
   isEmpty: 0
+  coolDownTime: 0
 --- !u!61 &180174150
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1816,6 +1818,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponControllerScript: {fileID: 0}
   isEmpty: 0
+  coolDownTime: 0
 --- !u!61 &477598781
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1889,6 +1892,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponControllerScript: {fileID: 0}
   isEmpty: 0
+  coolDownTime: 0
 --- !u!61 &530158569
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1962,6 +1966,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponControllerScript: {fileID: 0}
   isEmpty: 0
+  coolDownTime: 0
 --- !u!61 &543875080
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2251,6 +2256,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponControllerScript: {fileID: 0}
   isEmpty: 0
+  coolDownTime: 10
 --- !u!61 &683875216
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2977,6 +2983,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponControllerScript: {fileID: 0}
   isEmpty: 0
+  coolDownTime: 0
 --- !u!61 &1100549285
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3050,6 +3057,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponControllerScript: {fileID: 0}
   isEmpty: 0
+  coolDownTime: 0
 --- !u!61 &1130268273
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3437,6 +3445,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponControllerScript: {fileID: 0}
   isEmpty: 0
+  coolDownTime: 0
 --- !u!61 &1231534380
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3801,6 +3810,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponControllerScript: {fileID: 0}
   isEmpty: 0
+  coolDownTime: 0
 --- !u!61 &1391026397
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4773,6 +4783,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponControllerScript: {fileID: 0}
   isEmpty: 0
+  coolDownTime: 0
 --- !u!61 &1705125030
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4846,6 +4857,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponControllerScript: {fileID: 0}
   isEmpty: 0
+  coolDownTime: 0
 --- !u!61 &1745108014
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4919,6 +4931,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponControllerScript: {fileID: 0}
   isEmpty: 0
+  coolDownTime: 0
 --- !u!61 &1747179395
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5448,6 +5461,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponControllerScript: {fileID: 0}
   isEmpty: 0
+  coolDownTime: 0
 --- !u!61 &2085905478
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5521,6 +5535,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponControllerScript: {fileID: 0}
   isEmpty: 0
+  coolDownTime: 0
 --- !u!61 &2129096010
 BoxCollider2D:
   m_ObjectHideFlags: 0
