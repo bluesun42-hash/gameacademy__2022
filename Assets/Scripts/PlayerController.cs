@@ -27,13 +27,15 @@ public class PlayerController : MonoBehaviour
     {
         if (!weaponController.isInAction)
         {
-           
-            rb.velocity = direction * speed * Time.fixedDeltaTime;
             animator.SetFloat("Horizontal", direction.x);
             animator.SetFloat("Vertical", direction.y);
             animator.SetFloat("Speed", direction.sqrMagnitude);
+            rb.velocity = direction * speed * Time.fixedDeltaTime;
+
             if (direction != Vector2.zero)
             {
+                animator.SetFloat("LastHorizontal", direction.x);
+                animator.SetFloat("LastVertical", direction.y);
                 Quaternion toRotation = Quaternion.LookRotation(Vector3.forward, direction);
                 transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed);
             }
