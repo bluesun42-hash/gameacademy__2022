@@ -29,10 +29,8 @@ public class TargetController : MonoBehaviour
     {
         if (collision.transform.parent == gridManager)
         {
-            Debug.Log("in the grid");
             cellManager = collision.GetComponent<CellManager>();
-
-            Debug.Log(collision.transform.name);
+            Debug.Log("Collision with cell: "+collision.transform.name);
         }
     }
 }

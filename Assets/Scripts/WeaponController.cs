@@ -48,7 +48,6 @@ public class WeaponController : MonoBehaviour
                                 
                             }
                             GameObject target = GameObject.FindGameObjectWithTag("target");
-                            Debug.Log(target);
                             Destroy(target);
                             break;
                         }
