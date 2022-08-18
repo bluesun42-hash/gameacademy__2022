@@ -171,6 +171,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEmpty: 1
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &995046
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -297,6 +299,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEmpty: 1
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &5537374
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -486,6 +490,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEmpty: 1
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &41296682
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -730,6 +736,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEmpty: 1
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &83231362
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1042,6 +1050,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEmpty: 1
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &137584930
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1168,8 +1178,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponControllerScript: {fileID: 0}
   isEmpty: 0
-  coolDownTime: 0
+  coolDownTime: 30
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &137731310
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1296,6 +1308,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEmpty: 1
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &159370782
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1422,8 +1436,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponControllerScript: {fileID: 0}
   isEmpty: 0
-  coolDownTime: 0
+  coolDownTime: 30
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &180174150
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1550,6 +1566,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEmpty: 1
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &181743933
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1676,6 +1694,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEmpty: 1
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &206828971
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1885,6 +1905,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEmpty: 1
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &258009747
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2504,6 +2526,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEmpty: 1
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &421698785
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2630,6 +2654,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEmpty: 1
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &441941978
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2836,8 +2862,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponControllerScript: {fileID: 0}
   isEmpty: 0
-  coolDownTime: 0
+  coolDownTime: 30
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &477598781
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3069,8 +3097,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponControllerScript: {fileID: 0}
   isEmpty: 0
-  coolDownTime: 0
+  coolDownTime: 30
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &530158569
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3197,8 +3227,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponControllerScript: {fileID: 0}
   isEmpty: 0
-  coolDownTime: 0
+  coolDownTime: 30
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &543875080
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3391,6 +3423,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEmpty: 1
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &596262434
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3517,6 +3551,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEmpty: 1
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &603872636
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3719,6 +3755,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEmpty: 1
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &623868195
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3882,8 +3920,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponControllerScript: {fileID: 0}
   isEmpty: 0
-  coolDownTime: 10
+  coolDownTime: 30
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &683875216
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4122,7 +4162,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 737672046}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.9777491, y: -0.4343964, z: -10.398861}
+  m_LocalPosition: {x: 2.22, y: -0.4343964, z: -10.398861}
   m_LocalScale: {x: 8.850143, y: 8.850143, z: 8.850143}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4199,6 +4239,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEmpty: 1
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &740250315
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4634,6 +4676,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEmpty: 1
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &845893723
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4760,6 +4804,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEmpty: 1
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &885054839
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5483,8 +5529,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponControllerScript: {fileID: 0}
   isEmpty: 0
-  coolDownTime: 0
+  coolDownTime: 30
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &1100549285
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5611,8 +5659,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponControllerScript: {fileID: 0}
   isEmpty: 0
-  coolDownTime: 0
+  coolDownTime: 30
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &1130268273
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5909,6 +5959,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEmpty: 1
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &1163300971
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6159,6 +6211,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEmpty: 1
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &1188521489
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6285,8 +6339,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponControllerScript: {fileID: 0}
   isEmpty: 0
-  coolDownTime: 0
+  coolDownTime: 30
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &1231534380
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6413,6 +6469,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEmpty: 1
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &1233852304
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6539,6 +6597,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEmpty: 1
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &1349755622
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6745,8 +6805,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponControllerScript: {fileID: 0}
   isEmpty: 0
-  coolDownTime: 0
+  coolDownTime: 30
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &1391026397
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6895,7 +6957,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.05957522, y: -0.27299434}
+  m_Offset: {x: -0.59299374, y: -1.6495324}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -6906,7 +6968,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.28568217, y: 0.09401131}
+  m_Size: {x: 0.5954075, y: 2.8471878}
   m_EdgeRadius: 0
 --- !u!114 &1402792970
 MonoBehaviour:
@@ -7074,6 +7136,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEmpty: 1
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &1418088462
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7200,6 +7264,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEmpty: 1
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &1418418201
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7326,6 +7392,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEmpty: 1
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &1418421772
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7532,6 +7600,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEmpty: 1
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &1421394363
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7869,6 +7939,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEmpty: 1
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &1475427890
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8188,6 +8260,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEmpty: 1
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &1529504730
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8337,7 +8411,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.01, y: -0.25}
+  m_Offset: {x: -0.20268345, y: -1.3710687}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -8348,7 +8422,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.28568217, y: 0.09401131}
+  m_Size: {x: 0.6710491, y: 2.8966827}
   m_EdgeRadius: 0
 --- !u!114 &1564294877
 MonoBehaviour:
@@ -8678,6 +8752,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEmpty: 1
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &1584197899
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9015,6 +9091,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEmpty: 1
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &1655887196
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9141,6 +9219,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEmpty: 1
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &1664081108
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9267,8 +9347,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponControllerScript: {fileID: 0}
   isEmpty: 0
-  coolDownTime: 0
+  coolDownTime: 30
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &1705125030
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9395,8 +9477,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponControllerScript: {fileID: 0}
   isEmpty: 0
-  coolDownTime: 0
+  coolDownTime: 30
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &1745108014
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9523,8 +9607,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponControllerScript: {fileID: 0}
   isEmpty: 0
-  coolDownTime: 0
+  coolDownTime: 30
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &1747179395
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9700,6 +9786,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEmpty: 1
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &1819769644
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9998,6 +10086,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEmpty: 1
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &1870356928
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10124,6 +10214,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEmpty: 1
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &1895731684
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10288,6 +10380,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEmpty: 1
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &2001723086
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10400,6 +10494,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEmpty: 1
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &2017452393
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10734,8 +10830,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponControllerScript: {fileID: 0}
   isEmpty: 0
-  coolDownTime: 0
+  coolDownTime: 30
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &2085905478
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10862,8 +10960,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponControllerScript: {fileID: 0}
   isEmpty: 0
-  coolDownTime: 0
+  coolDownTime: 30
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!61 &2129096010
 BoxCollider2D:
   m_ObjectHideFlags: 0
