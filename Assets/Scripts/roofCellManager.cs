@@ -8,13 +8,26 @@ public class roofCellManager : MonoBehaviour
     public bool isEmpty;
     public int coolDownTime;
     public SpriteRenderer spriteRendererCell;
+    public int randValue;
+    public int probability;
 
 
     private void Start()
     {
+       randValue = Random.Range(0, 101);
+        if (randValue < probability)
+        {
+            isEmpty = true;
+            StartCoroutine(startCoolDown());
+        }
+        else
+        {
+            isEmpty = false;
+        }
         spriteRendererCell = gameObject.GetComponent<SpriteRenderer>();
-        coolDownTime = 10;
+        
         weaponControllerScript = GameObject.FindGameObjectWithTag("player1").GetComponent<WeaponController>();
+      
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
