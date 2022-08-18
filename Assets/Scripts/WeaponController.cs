@@ -39,12 +39,13 @@ public class WeaponController : MonoBehaviour
                             isTargetSpawned = false;
                             isInAction = false;
                             Debug.Log(cellManager);
-                            if (cellManager.isEmpty && !lastCellRoof.GetComponent<roofCellManager>().isEmpty)
+                            if (cellManager.isEmpty)
                             {
                                 globalCellManager.fullCells++;
                                 cellManager.isEmpty = false;
+                                GameObject.FindGameObjectWithTag("ballSpawn").GetComponent<ballSpawn>().isShooting = true;
                                 
-                                StartCoroutine(lastCellRoof.GetComponent<roofCellManager>().startCoolDown());
+                                
                                 
                             }
                             GameObject target = GameObject.FindGameObjectWithTag("target");
@@ -65,6 +66,7 @@ public class WeaponController : MonoBehaviour
                                 isTargetSpawned = true;
                                 GameObject spawned = Instantiate(targetPrefab, targetSpawn.transform);
                                 lastCellRoof.GetComponent<roofCellManager>().isEmpty = true;
+                                StartCoroutine(lastCellRoof.GetComponent<roofCellManager>().startCoolDown());
                                 playerController.target = spawned;
                             }
                             break;

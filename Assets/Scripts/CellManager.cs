@@ -23,6 +23,7 @@ public class CellManager : MonoBehaviour
     }
     else if (collision.transform.CompareTag("target"))
     {
+            GameObject.FindGameObjectWithTag("ballSpawn").GetComponent<ballSpawn>().cellTrans = transform;
       weaponController1.lastCell = gameObject;
       weaponController1.cellManager = transform.GetComponent<CellManager>();
     }

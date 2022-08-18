@@ -27,7 +27,9 @@ public class roofCellManager : MonoBehaviour
 
    public IEnumerator startCoolDown()
     {
+        Debug.Log("cooldown started");
         yield return new WaitForSeconds(coolDownTime);
+        Debug.Log("cooldown ended");
         isEmpty = false;
     }
 

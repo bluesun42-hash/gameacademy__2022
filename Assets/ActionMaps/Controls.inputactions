@@ -136,17 +136,6 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "2D Vector",
-                    "id": "2e4df54f-a327-4345-a926-d40db9ec94a5",
-                    "path": "2DVector",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
                     "name": "",
                     "id": "ba53d53b-7e48-4403-90e8-26d158280189",
                     "path": "<Gamepad>/buttonWest",
