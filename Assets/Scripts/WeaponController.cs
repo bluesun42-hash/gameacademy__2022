@@ -10,6 +10,7 @@ public class WeaponController : MonoBehaviour
     public GameObject lastCell;
     private GlobalCellManager globalCellManager;
     public int playerIndex;
+    public int controllerIndex;
     public bool isInAction = false;
     public bool isTargetSpawned = false;
     public GameObject targetPrefab;
@@ -21,10 +22,6 @@ public class WeaponController : MonoBehaviour
     private void Start()
     {
         globalCellManager = GameObject.FindGameObjectWithTag("globalCellManager").GetComponent<GlobalCellManager>();
-    }
-    public int GetPlayerIndex()
-    {
-        return playerIndex;
     }
     public void OnAction(InputAction.CallbackContext ctx)
     {
