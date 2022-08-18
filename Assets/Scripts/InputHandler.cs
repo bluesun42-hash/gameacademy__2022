@@ -30,8 +30,8 @@ public class InputHandler : MonoBehaviour
   {
     if (weaponController != null) weaponController.OnAction(ctx);
   }
-  //   public void OnPause(InputAction.CallbackContext ctx)
-  //   {
-  //     FindObjectOfType<SceneChanger>()?.PressPause(ctx);
-  //   }
+    public void OnPause(InputAction.CallbackContext ctx)
+    {
+      FindObjectOfType<PauseManager>()?.OpenCloseUi();
+    }
 }
