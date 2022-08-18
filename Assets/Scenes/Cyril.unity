@@ -2730,7 +2730,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 737672046}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.9777491, y: -0.4343964, z: -10.398861}
+  m_LocalPosition: {x: 2.22, y: -0.4343964, z: -10.398861}
   m_LocalScale: {x: 8.850143, y: 8.850143, z: 8.850143}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4803,7 +4803,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponControllerScript: {fileID: 0}
   isEmpty: 0
-  coolDownTime: 30
+  coolDownTime: 330
   spriteRendererCell: {fileID: 0}
 --- !u!1 &1126942798
 GameObject:
@@ -6383,7 +6383,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.05957522, y: -0.27299434}
+  m_Offset: {x: -0.59299374, y: -1.6495324}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -6394,7 +6394,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.28568217, y: 0.09401131}
+  m_Size: {x: 0.5954075, y: 2.8471878}
   m_EdgeRadius: 0
 --- !u!114 &1402792970
 MonoBehaviour:
@@ -7449,7 +7449,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.01, y: -0.25}
+  m_Offset: {x: -0.20268345, y: -1.3710687}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -7460,7 +7460,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.28568217, y: 0.09401131}
+  m_Size: {x: 0.6710491, y: 2.8966827}
   m_EdgeRadius: 0
 --- !u!114 &1564294877
 MonoBehaviour:
@@ -8843,8 +8843,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponControllerScript: {fileID: 0}
   isEmpty: 0
-  coolDownTime: 30
+  coolDownTime: 330
   spriteRendererCell: {fileID: 0}
+  randValue: 0
+  probability: 50
 --- !u!1 &1703266307
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,13 +8,25 @@ public class CellManager : MonoBehaviour
   private WeaponController weaponController1;
     public SpriteRenderer spriteRendererCell;
   private WeaponController weaponController2;
+    public int randValue;
+    public int probability;
 
-  public void Start()
+    public void Start()
   {
+        randValue = Random.Range(0, 101);
+        if (randValue < probability)
+        {
+            isEmpty = true;
+           
+        }
+        else
+        {
+            isEmpty = false;
+        }
         spriteRendererCell = gameObject.GetComponent<SpriteRenderer>();
     weaponController1 = GameObject.FindGameObjectWithTag("player1").GetComponent<WeaponController>();
     weaponController2 = GameObject.FindGameObjectWithTag("player2").GetComponent<WeaponController>();
-    isEmpty = true;
+   
   }
   private void OnTriggerEnter2D(Collider2D collision)
   {
@@ -40,6 +52,13 @@ public class CellManager : MonoBehaviour
         {
             spriteRendererCell.color = Color.white;
         }
+    }
+    public IEnumerator startCoolDown()
+    {
+        Debug.Log("cooldown started");
+        yield return new WaitForSeconds(30);
+        Debug.Log("cooldown ended");
+        isEmpty = false;
     }
 
 }
