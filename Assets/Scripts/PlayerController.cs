@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    public int controllerIndex;
     public int speed = 200;
     public int targetSpeed = 300;
     public Vector2 direction;
@@ -15,14 +16,11 @@ public class PlayerController : MonoBehaviour
     public GameObject target;
     public roofCellManager roofCellManagerScript;
     private Animator animator;
+
     private void Start() {
-        animator = GetComponent<Animator>();
+            animator = GetComponent<Animator>();
     }
 
-    public int GetPlayerIndex()
-    {
-        return playerIndex;
-    }
     private void FixedUpdate()
     {
         if (!weaponController.isInAction)
