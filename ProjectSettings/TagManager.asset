@@ -18,6 +18,7 @@ TagManager:
   - gridRoof
   - ballSpawn
   - snowBall
+  - ballHolder
   layers:
   - Default
   - TransparentFX
