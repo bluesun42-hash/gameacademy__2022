@@ -43,7 +43,7 @@ public class WeaponController : MonoBehaviour
                             {
                                 globalCellManager.fullCells++;
                                 cellManager.isEmpty = false;
-                                lastCellRoof.GetComponent<roofCellManager>().isEmpty = true;
+                                
                                 StartCoroutine(lastCellRoof.GetComponent<roofCellManager>().startCoolDown());
                                 
                             }
@@ -64,6 +64,7 @@ public class WeaponController : MonoBehaviour
                                 isInAction = true;
                                 isTargetSpawned = true;
                                 GameObject spawned = Instantiate(targetPrefab, targetSpawn.transform);
+                                lastCellRoof.GetComponent<roofCellManager>().isEmpty = true;
                                 playerController.target = spawned;
                             }
                             break;

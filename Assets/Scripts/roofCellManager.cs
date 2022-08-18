@@ -11,6 +11,7 @@ public class roofCellManager : MonoBehaviour
 
     private void Start()
     {
+        coolDownTime = 10;
         weaponControllerScript = GameObject.FindGameObjectWithTag("player1").GetComponent<WeaponController>();
     }
 
