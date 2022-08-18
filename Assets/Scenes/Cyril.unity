@@ -2011,7 +2011,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.7110027, y: 0}
+  m_Offset: {x: -0.6868537, y: 0.022150457}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2022,7 +2022,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.43781206, y: 1}
+  m_Size: {x: 0.4861101, y: 1.0988597}
   m_EdgeRadius: 0
 --- !u!61 &296083375
 BoxCollider2D:
@@ -2037,7 +2037,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0016384125, y: -0.5735953}
+  m_Offset: {x: 0.015066683, y: -0.5606711}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2048,7 +2048,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0032766, y: 0.13268918}
+  m_Size: {x: 1.2260109, y: 0.15853757}
   m_EdgeRadius: 0
 --- !u!61 &296083376
 BoxCollider2D:
@@ -2063,7 +2063,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.55803806, y: 0}
+  m_Offset: {x: 0.5211042, y: 0.00023889542}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2074,7 +2074,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.14581767, y: 1}
+  m_Size: {x: 0.21968532, y: 1.0472424}
   m_EdgeRadius: 0
 --- !u!61 &296083377
 BoxCollider2D:
@@ -2089,7 +2089,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.5463048}
+  m_Offset: {x: 0, y: 0.5492874}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2100,7 +2100,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.13052371}
+  m_Size: {x: 1, y: 0.12455857}
   m_EdgeRadius: 0
 --- !u!1 &315404756
 GameObject:
@@ -2182,7 +2182,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3325,7 +3325,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &593901931
 Transform:
   m_ObjectHideFlags: 0
@@ -3628,8 +3628,8 @@ RectTransform:
   m_Father: {fileID: 1984098381}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5328,7 +5328,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1096957903
 GameObject:
@@ -5398,7 +5398,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 338412036}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MasterVol, Assembly-CSharp
         m_MethodName: OnValueChanged
         m_Mode: 1
@@ -5996,7 +5996,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1174192119}
-  - component: {fileID: 1174192118}
   - component: {fileID: 1174192117}
   m_Layer: 0
   m_Name: PausManager
@@ -6021,60 +6020,6 @@ MonoBehaviour:
   obj: {fileID: 593901930}
   slider2: {fileID: 1489605496}
   text: {fileID: 1583325764}
---- !u!114 &1174192118
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1174192116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: ecb261fe50ce6e74396823a0e599f899, type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 7bd41a41-86fc-466c-a71c-74e8eb81229b
-    m_ActionName: player1/move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 28d78177-94ed-4068-a24d-51ee129bcc2c
-    m_ActionName: player1/throw snow[/Keyboard/f]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1174192117}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: OpenCloseUi
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-    m_ActionId: 3f322c0d-6178-44ce-bdc0-e75d2e7f053d
-    m_ActionName: Ui/New action[/Keyboard/escape]
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Ui
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!4 &1174192119
 Transform:
   m_ObjectHideFlags: 0
@@ -6088,7 +6033,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1183306590
 GameObject:
@@ -6124,7 +6069,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -6979,7 +6924,6 @@ MonoBehaviour:
   lastCell: {fileID: 0}
   playerIndex: 1
   controllerIndex: 0
-  controllerIndex: 0
   isInAction: 0
   isTargetSpawned: 0
   targetPrefab: {fileID: 0}
@@ -6999,7 +6943,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c58e6afc5d184482cb4ac6481e1b4762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controllerIndex: 0
   controllerIndex: 0
   speed: 200
   targetSpeed: 300
@@ -7701,7 +7644,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -8423,7 +8366,6 @@ MonoBehaviour:
   lastCell: {fileID: 0}
   playerIndex: 0
   controllerIndex: 0
-  controllerIndex: 0
   isInAction: 0
   isTargetSpawned: 0
   targetPrefab: {fileID: 8594266626563220174, guid: 507c309ea316aa345a08d332ef06c496, type: 3}
@@ -8443,7 +8385,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c58e6afc5d184482cb4ac6481e1b4762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controllerIndex: 0
   controllerIndex: 0
   speed: 200
   targetSpeed: 600
