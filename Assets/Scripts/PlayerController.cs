@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     public int playerIndex;
     public WeaponController weaponController;
     public GameObject target;
+    public roofCellManager roofCellManagerScript;
 
     public int GetPlayerIndex()
     {
@@ -21,6 +22,7 @@ public class PlayerController : MonoBehaviour
     {
         if (!weaponController.isInAction)
         {
+           
             rb.velocity = direction * speed * Time.fixedDeltaTime;
             if (direction != Vector2.zero)
             {
@@ -38,4 +40,5 @@ public class PlayerController : MonoBehaviour
     {
         direction = ctx.ReadValue<Vector2>();
     }
+   
 }

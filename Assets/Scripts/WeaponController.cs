@@ -15,6 +15,8 @@ public class WeaponController : MonoBehaviour
     public GameObject targetPrefab;
     public GameObject targetSpawn;
     public PlayerController playerController;
+    public roofCellManager roofCellScript;
+    public GameObject lastCellRoof;
 
     private void Start()
     {
@@ -41,6 +43,7 @@ public class WeaponController : MonoBehaviour
                             {
                                 globalCellManager.fullCells++;
                                 cellManager.isEmpty = false;
+                                lastCellRoof.GetComponent<roofCellManager>().isEmpty = true;
                             }
                             GameObject target = GameObject.FindGameObjectWithTag("target");
                             Debug.Log(target);
