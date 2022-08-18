@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4ea78cb5209261b44a9199b42f784dd6
+guid: 17f674149407946a09d84376afb5eddc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -66,10 +66,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -104,85 +104,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: papipelle_idledroite_final_0
+      name: runderriere_final_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 0
-        width: 64
+        width: 74
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0be9556d5e20c9948b2b00cfa44afd77
-      internalID: 1456568799
+      spriteID: 7db3247d918044812879c591c3f81c04
+      internalID: -1610872428
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: papipelle_idledroite_final_1
+      name: runderriere_final_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 76
         y: 0
-        width: 64
+        width: 74
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edeee09cc5e2db844a0e30d2da8a20b4
-      internalID: -1134703149
+      spriteID: d22b806d6c8f342baa8ed7d36c5ccf7f
+      internalID: 1348152979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: papipelle_idledroite_final_2
+      name: runderriere_final_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 150
         y: 0
-        width: 64
+        width: 74
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c556f4a0b0d638a488a620e3b96ccc8a
-      internalID: 1784461004
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: papipelle_idledroite_final_3
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d9ca3aa306ae64545afe4563e812ec08
-      internalID: 553360750
+      spriteID: 97017ae507d624b19ad1cc36affbc46c
+      internalID: 166403682
       vertices: []
       indices: 
       edges: []
@@ -198,10 +177,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      papipelle_idledroite_final_0: 1456568799
-      papipelle_idledroite_final_3: 553360750
-      papipelle_idledroite_final_1: -1134703149
-      papipelle_idledroite_final_2: 1784461004
+      runderriere_final_2: 166403682
+      runderriere_final_1: 1348152979
+      runderriere_final_0: -1610872428
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

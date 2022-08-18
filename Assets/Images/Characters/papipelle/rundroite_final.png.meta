@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4ea78cb5209261b44a9199b42f784dd6
+guid: c972073b4507743259cd732649e8a3e7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -66,10 +66,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -104,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: papipelle_idledroite_final_0
+      name: rundroite_final_0
       rect:
         serializedVersion: 2
         x: 0
@@ -118,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0be9556d5e20c9948b2b00cfa44afd77
-      internalID: 1456568799
+      spriteID: 3e4dadfd1c3ef40afa41c65860c33fc1
+      internalID: 484456363
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: papipelle_idledroite_final_1
+      name: rundroite_final_1
       rect:
         serializedVersion: 2
         x: 64
@@ -139,14 +139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edeee09cc5e2db844a0e30d2da8a20b4
-      internalID: -1134703149
+      spriteID: dedc0e41444894fe2a376924c9d7bb2a
+      internalID: -2015773741
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: papipelle_idledroite_final_2
+      name: rundroite_final_2
       rect:
         serializedVersion: 2
         x: 128
@@ -160,14 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c556f4a0b0d638a488a620e3b96ccc8a
-      internalID: 1784461004
+      spriteID: 160bdce3da0684a2abfba7b5bc007e16
+      internalID: 1356072441
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: papipelle_idledroite_final_3
+      name: rundroite_final_3
       rect:
         serializedVersion: 2
         x: 192
@@ -181,8 +181,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9ca3aa306ae64545afe4563e812ec08
-      internalID: 553360750
+      spriteID: 403c74e6edd064f12a79f9c28c4c9431
+      internalID: 2108479624
       vertices: []
       indices: 
       edges: []
@@ -198,10 +198,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      papipelle_idledroite_final_0: 1456568799
-      papipelle_idledroite_final_3: 553360750
-      papipelle_idledroite_final_1: -1134703149
-      papipelle_idledroite_final_2: 1784461004
+      rundroite_final_1: -2015773741
+      rundroite_final_0: 484456363
+      rundroite_final_2: 1356072441
+      rundroite_final_3: 2108479624
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
