@@ -34,7 +34,7 @@ public class CellManager : MonoBehaviour
     {
         if (isEmpty)
         {
-            spriteRendererCell.color = Color.red;
+            spriteRendererCell.color = new Color(0,0,0,0);
         }
         else
         {
