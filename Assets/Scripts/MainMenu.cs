@@ -35,8 +35,8 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
-        //SceneManager.LoadScene("Cyril");
-        SceneManager.LoadScene("Alex");
+        SceneManager.LoadScene("Cyril");
+        //SceneManager.LoadScene("Alex");
     }
     public void GoMenu()    
     {

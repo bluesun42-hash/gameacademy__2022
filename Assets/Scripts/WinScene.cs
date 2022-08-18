@@ -12,9 +12,6 @@ public class WinScene : MonoBehaviour
     string winner = Timer.winner;
     void Start()
     {
-        Debug.Log("Game duration " + PublicVar.GameDuration);
-        PublicVar.GameDuration -= 90;
-        PublicVar.GameDuration /= 30;
         Debug.Log(winner);
         if (winner == "joueur 1")
         {
@@ -25,11 +22,13 @@ public class WinScene : MonoBehaviour
 
     public void BackToMenu()
     {
+        Debug.Log("Game duration " + PublicVar.GameDuration);
         SceneManager.LoadScene("SceneMenu");
     }
 
     public void PlayAgain()
     {
+        Debug.Log("Game duration " + PublicVar.GameDuration);
         SceneManager.LoadScene("Cyril");
     }
 }

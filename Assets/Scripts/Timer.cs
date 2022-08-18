@@ -13,10 +13,14 @@ public class Timer : MonoBehaviour
     public Text timeText;
     static public string winner;
     public GlobalCellManager GlobalCellManagerScript;
-   
 
+    private void Awake()
+    {
+        Debug.Log("1 " + PublicVar.GameDuration);
+    }
     private void Start()
     {
+        Debug.Log("2 " + PublicVar.GameDuration);
         timeValue = PublicVar.GameDuration;
         //timeValue = 20;
     }
@@ -41,10 +45,13 @@ public class Timer : MonoBehaviour
             {
                 winner = "joueur 1";
                 Debug.Log(winner);
-            }else
+                Debug.Log(PublicVar.GameDuration);
+            }
+            else
             {
                 winner = "joueur 2";
                 Debug.Log(winner);
+                Debug.Log(PublicVar.GameDuration);
             }
         }
     }
