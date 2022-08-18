@@ -2,6 +2,7 @@ using UnityEngine.Audio;
 using System.Collections;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
 public class AudioManager : MonoBehaviour
 {
@@ -15,8 +16,9 @@ public class AudioManager : MonoBehaviour
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
 
-            s.source.volume = s.volume;
+            s.source.volume = 1;
             s.source.pitch = 1;
+            s.source.loop = true;
         }
     }
 
@@ -46,12 +48,18 @@ public class AudioManager : MonoBehaviour
     public void Play(string name)
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
+        try{
+        
         s.source.Play();
-    }
+        } catch
+        {
 
+        }
+    }
 
     void Start()
     {
+        Play("MenuTheme");
         Play("MainTheme");
         IncreaseAndPlay("ZickZack");
     }

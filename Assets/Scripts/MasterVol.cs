@@ -6,17 +6,21 @@ using UnityEngine.Audio;
 
 public class MasterVol : MonoBehaviour
 {
+    public Text text;
     public Slider slider;
 
     private void Start()
     {
-        slider.minValue = 0;
-        slider.maxValue = 1;
-        slider.SetValueWithoutNotify(AudioListener.volume);
+       
+        slider.value = PublicVar.MasterVol*100;
     }
     public void OnValueChanged()
     {
-        AudioListener.volume = slider.value;
-        Debug.Log(AudioListener.volume);
+        PublicVar.MasterVol = slider.value/100;
+        AudioListener.volume = PublicVar.MasterVol;
+        PublicVar.slideBool = true;
+
+        text.text = slider.value + "%";
     }
 }
+    
