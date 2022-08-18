@@ -147,50 +147,6 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "up",
-                    "id": "20260ea8-8ae3-4802-9557-430a16452ceb",
-                    "path": "<Keyboard>/i",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "KBM ijkl",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "9d9829fe-63fa-4dc9-a941-987bd230d24d",
-                    "path": "<Keyboard>/k",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "KBM ijkl",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "left",
-                    "id": "c7614d7d-ec6e-408f-80e2-b134b3d1effe",
-                    "path": "<Keyboard>/j",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "KBM ijkl",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "right",
-                    "id": "37e7b515-061b-4902-9a74-e31df682fc08",
-                    "path": "<Keyboard>/l",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "KBM ijkl",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
                     "name": "",
                     "id": "ba53d53b-7e48-4403-90e8-26d158280189",
                     "path": "<Gamepad>/buttonWest",
@@ -208,17 +164,6 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "KBM",
-                    "action": "Action",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "450d3440-a0d4-4bb8-933b-d12ffd1692b3",
-                    "path": "<Keyboard>/p",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "KBM ijkl",
                     "action": "Action",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -288,17 +233,6 @@
             "devices": [
                 {
                     "devicePath": "<Gamepad>",
-                    "isOptional": false,
-                    "isOR": false
-                }
-            ]
-        },
-        {
-            "name": "KBM ijkl",
-            "bindingGroup": "KBM ijkl",
-            "devices": [
-                {
-                    "devicePath": "<Keyboard>",
                     "isOptional": false,
                     "isOR": false
                 }

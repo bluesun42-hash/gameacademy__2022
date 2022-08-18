@@ -349,6 +349,7 @@ GameObject:
   m_Component:
   - component: {fileID: 80880426}
   - component: {fileID: 80880425}
+  - component: {fileID: 80880427}
   m_Layer: 0
   m_Name: PlayerManager
   m_TagString: Untagged
@@ -415,6 +416,47 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &80880427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80880424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1306e14b8c5b33d40ad1da45dec8a6aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  players:
+  - name: WASD
+    routes:
+    - original: 37
+      remapped: 37
+    - original: 33
+      remapped: 33
+    - original: 15
+      remapped: 15
+    - original: 18
+      remapped: 18
+    - original: 20
+      remapped: 20
+    - original: 60
+      remapped: 60
+  - name: IJKL
+    routes:
+    - original: 37
+      remapped: 23
+    - original: 33
+      remapped: 25
+    - original: 15
+      remapped: 24
+    - original: 18
+      remapped: 26
+    - original: 20
+      remapped: 6
+    - original: 60
+      remapped: 47
 --- !u!1 &83231359
 GameObject:
   m_ObjectHideFlags: 0
@@ -1487,7 +1529,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -368, y: 210}
+  m_AnchoredPosition: {x: -272, y: 198}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &467796847
@@ -2441,7 +2483,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.85226
+  orthographic size: 8.266687
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3628,7 +3670,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -219, y: 210}
+  m_AnchoredPosition: {x: -122.999985, y: 198}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1569577927
@@ -4405,7 +4447,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &2145599229
 Canvas:
   m_ObjectHideFlags: 0
@@ -4415,7 +4457,7 @@ Canvas:
   m_GameObject: {fileID: 2145599226}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 2
   m_Camera: {fileID: 1139907674}
   m_PlaneDistance: 100
   m_PixelPerfect: 1
@@ -4435,8 +4477,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2145599226}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 90}
+  m_LocalScale: {x: 0.037111953, y: 0.037111953, z: 0.037111953}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 467796846}
@@ -4447,5 +4489,5 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_SizeDelta: {x: 733.50006, y: 445.5}
+  m_Pivot: {x: 0.5, y: 0.5}
