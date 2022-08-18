@@ -16,6 +16,8 @@ TagManager:
   - gridChecker
   - globalCellManager
   - gridRoof
+  - ballSpawn
+  - snowBall
   layers:
   - Default
   - TransparentFX
