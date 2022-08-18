@@ -15,8 +15,8 @@ public class InputHandler : MonoBehaviour
     playerInput = GetComponent<PlayerInput>();
     var playerControllers = FindObjectsOfType<PlayerController>();
     var weaponControllers = FindObjectsOfType<WeaponController>();
-    playerController = Array.Find(playerControllers, e => e.GetPlayerIndex() == playerInput.playerIndex);
-    weaponController = Array.Find(weaponControllers, e => e.GetPlayerIndex() == playerInput.playerIndex);
+    playerController = Array.Find(playerControllers, e => e.controllerIndex == playerInput.playerIndex);
+    weaponController = Array.Find(weaponControllers, e => e.controllerIndex == playerInput.playerIndex);
   }
 
   public void OnMove(InputAction.CallbackContext ctx)

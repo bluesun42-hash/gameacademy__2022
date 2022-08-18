@@ -5290,9 +5290,10 @@ MonoBehaviour:
   cellManager: {fileID: 0}
   lastCell: {fileID: 0}
   playerIndex: 1
+  controllerIndex: 0
   isInAction: 0
   isTargetSpawned: 0
-  targetPrefab: {fileID: 0}
+  targetPrefab: {fileID: 8594266626563220174, guid: 507c309ea316aa345a08d332ef06c496, type: 3}
   targetSpawn: {fileID: 926936197}
   playerController: {fileID: 1402792971}
   roofCellScript: {fileID: 0}
@@ -5309,6 +5310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c58e6afc5d184482cb4ac6481e1b4762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controllerIndex: 0
   speed: 200
   targetSpeed: 300
   direction: {x: 0, y: 0}
@@ -6409,6 +6411,7 @@ MonoBehaviour:
   cellManager: {fileID: 0}
   lastCell: {fileID: 0}
   playerIndex: 0
+  controllerIndex: 0
   isInAction: 0
   isTargetSpawned: 0
   targetPrefab: {fileID: 8594266626563220174, guid: 507c309ea316aa345a08d332ef06c496, type: 3}
@@ -6428,6 +6431,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c58e6afc5d184482cb4ac6481e1b4762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controllerIndex: 0
   speed: 200
   targetSpeed: 600
   direction: {x: 0, y: 0}
