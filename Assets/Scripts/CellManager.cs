@@ -16,12 +16,15 @@ public class CellManager : MonoBehaviour
   }
   private void OnTriggerEnter2D(Collider2D collision)
   {
-    if (collision.transform.tag == "player2")
+    if (collision.transform.CompareTag("player2"))
+    {
+      weaponController2.lastCell = gameObject;
+      weaponController2.cellManager = transform.GetComponent<CellManager>();
+    }
+    else if (collision.transform.CompareTag("target"))
     {
       weaponController1.lastCell = gameObject;
       weaponController1.cellManager = transform.GetComponent<CellManager>();
-      weaponController2.lastCell = gameObject;
-      weaponController2.cellManager = transform.GetComponent<CellManager>();
     }
   }
 

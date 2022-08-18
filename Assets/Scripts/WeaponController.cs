@@ -38,7 +38,7 @@ public class WeaponController : MonoBehaviour
                         {
                             isTargetSpawned = false;
                             isInAction = false;
-                            Debug.Log(cellManager);
+                            Debug.Log("Current cellManager: "+cellManager);
                             if (cellManager.isEmpty)
                             {
                                 globalCellManager.fullCells++;
@@ -46,7 +46,6 @@ public class WeaponController : MonoBehaviour
                                 lastCellRoof.GetComponent<roofCellManager>().isEmpty = true;
                             }
                             GameObject target = GameObject.FindGameObjectWithTag("target");
-                            Debug.Log(target);
                             Destroy(target);
                             break;
                         }
