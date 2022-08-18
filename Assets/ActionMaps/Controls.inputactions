@@ -136,17 +136,6 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "2D Vector",
-                    "id": "2e4df54f-a327-4345-a926-d40db9ec94a5",
-                    "path": "2DVector",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
                     "name": "",
                     "id": "ba53d53b-7e48-4403-90e8-26d158280189",
                     "path": "<Gamepad>/buttonWest",
@@ -206,98 +195,6 @@
                     "action": "New action",
                     "isComposite": false,
                     "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "pointers",
-            "id": "0b958057-bcf0-46bc-bdd5-5cce8071d96f",
-            "actions": [
-                {
-                    "name": "move",
-                    "type": "Value",
-                    "id": "423215f8-d379-4664-a991-150fab4b01ed",
-                    "expectedControlType": "Vector2",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                },
-                {
-                    "name": "select",
-                    "type": "Button",
-                    "id": "b3eaf65d-4a3e-4334-a5ee-613b86bea8bd",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "bf4d5c20-0798-43fb-ae2e-a2bce32a2c88",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "select",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "2D Vector",
-                    "id": "be45dd5a-4082-45e0-adc3-0a381d01786a",
-                    "path": "2DVector",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "move",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "up",
-                    "id": "d923de56-c4c8-4045-a73a-196e93e5e774",
-                    "path": "<Keyboard>/w",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "333a1931-a94c-4c20-9744-88713be4187a",
-                    "path": "<Keyboard>/s",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "left",
-                    "id": "25a46017-197c-44d2-9cad-d862d415a9ed",
-                    "path": "<Keyboard>/a",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "right",
-                    "id": "37bf74ae-4c1c-40b1-8783-d1b3b647e79d",
-                    "path": "<Keyboard>/d",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
                 }
             ]
         }

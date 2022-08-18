@@ -39,7 +39,7 @@ public class WeaponController : MonoBehaviour
                             isTargetSpawned = false;
                             isInAction = false;
                             Debug.Log(cellManager);
-                            if (cellManager.isEmpty )
+                            if (cellManager.isEmpty)
                             {
                                 globalCellManager.fullCells++;
                                 cellManager.isEmpty = false;
