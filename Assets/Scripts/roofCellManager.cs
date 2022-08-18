@@ -45,4 +45,6 @@ public class roofCellManager : MonoBehaviour
             spriteRendererCell.color = Color.white;
         }
     }
+
+
 }

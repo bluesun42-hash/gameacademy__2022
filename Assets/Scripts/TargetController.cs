@@ -9,9 +9,11 @@ public class TargetController : MonoBehaviour
     public CellManager cellManager;
     private Transform gridManager;
     public GlobalCellManager globalCellManager;
+    public GameObject snowBallDestroyer;
 
     private void Start()
     {
+        snowBallDestroyer = GameObject.FindGameObjectWithTag("snowBallDestroyer");
         gridManager = GameObject.FindGameObjectWithTag("gridManager").GetComponent<Transform>();
         globalCellManager = GameObject.FindGameObjectWithTag("globalCellManager").GetComponent<GlobalCellManager>();
         GameObject player = GameObject.FindGameObjectWithTag("player2");
@@ -31,6 +33,7 @@ public class TargetController : MonoBehaviour
         {
             cellManager = collision.GetComponent<CellManager>();
             Debug.Log("Collision with cell: "+collision.transform.name);
+            snowBallDestroyer.transform.position = collision.transform.position;
         }
     }
 }

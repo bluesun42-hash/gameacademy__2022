@@ -14,6 +14,7 @@ public class ballSpawn : MonoBehaviour
     public Vector2 finalDirection;
     public Vector3 finalSpawn;
     public Transform ballHolder;
+
     private void Start()
     {
 
@@ -37,6 +38,7 @@ public class ballSpawn : MonoBehaviour
 
         if (isShooting)
         {
+            
             finalDirection = directionBall;
             finalSpawn = new Vector3(playerPos.x, playerPos.y, -5.5f);
             Debug.Log("shoot");
