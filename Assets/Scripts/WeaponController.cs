@@ -43,6 +43,7 @@ public class WeaponController : MonoBehaviour
                             {
                                 globalCellManager.fullCells++;
                                 cellManager.isEmpty = false;
+                                
                                 GameObject.FindGameObjectWithTag("ballSpawn").GetComponent<ballSpawn>().isShooting = true;
                                 
                                 

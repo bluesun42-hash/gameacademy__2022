@@ -6,10 +6,12 @@ public class CellManager : MonoBehaviour
 {
   public bool isEmpty = true;
   private WeaponController weaponController1;
+    public SpriteRenderer spriteRendererCell;
   private WeaponController weaponController2;
 
   public void Start()
   {
+        spriteRendererCell = gameObject.GetComponent<SpriteRenderer>();
     weaponController1 = GameObject.FindGameObjectWithTag("player1").GetComponent<WeaponController>();
     weaponController2 = GameObject.FindGameObjectWithTag("player2").GetComponent<WeaponController>();
     isEmpty = true;
@@ -28,5 +30,16 @@ public class CellManager : MonoBehaviour
       weaponController1.cellManager = transform.GetComponent<CellManager>();
     }
   }
+    private void FixedUpdate()
+    {
+        if (isEmpty)
+        {
+            spriteRendererCell.color = Color.red;
+        }
+        else
+        {
+            spriteRendererCell.color = Color.white;
+        }
+    }
 
 }

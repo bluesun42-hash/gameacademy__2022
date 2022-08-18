@@ -7,10 +7,12 @@ public class roofCellManager : MonoBehaviour
     public WeaponController weaponControllerScript;
     public bool isEmpty;
     public int coolDownTime;
-    
+    public SpriteRenderer spriteRendererCell;
+
 
     private void Start()
     {
+        spriteRendererCell = gameObject.GetComponent<SpriteRenderer>();
         coolDownTime = 10;
         weaponControllerScript = GameObject.FindGameObjectWithTag("player1").GetComponent<WeaponController>();
     }
@@ -32,5 +34,15 @@ public class roofCellManager : MonoBehaviour
         Debug.Log("cooldown ended");
         isEmpty = false;
     }
-
+    private void FixedUpdate()
+    {
+        if (isEmpty)
+        {
+            spriteRendererCell.color = Color.red;
+        }
+        else
+        {
+            spriteRendererCell.color = Color.white;
+        }
+    }
 }
