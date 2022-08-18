@@ -16,13 +16,16 @@ public class PlayerController : MonoBehaviour
     public GameObject target;
     public roofCellManager roofCellManagerScript;
     private Animator animator;
+    private bool lastActionState;
 
-    private void Start() {
+  private void Start() {
             animator = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
     {
+        animator.SetBool("InAction", weaponController.isInAction);
+
         if (!weaponController.isInAction)
         {
             animator.SetFloat("Horizontal", direction.x);
