@@ -13,11 +13,16 @@ public class WinScene : MonoBehaviour
     void Start()
     {
         Debug.Log(winner);
+       
         if (winner == "joueur 1")
         {
             ScreenWin1.SetActive(true);
             ScreenWin2.SetActive(false);
-        } 
+        } else if(winner == "joueur 2")
+        {
+            ScreenWin1.SetActive(false);
+            ScreenWin2.SetActive(true);
+        }
     }
 
     public void BackToMenu()

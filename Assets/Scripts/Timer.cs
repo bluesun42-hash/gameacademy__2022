@@ -49,8 +49,7 @@ public class Timer : MonoBehaviour
         timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
         if (timeValue <= 0)
         {
-            SceneManager.LoadScene("finalScene");
-            if(GlobalCellManagerScript.percentageOfFull >= 0.5f)
+            if (GlobalCellManagerScript.percentageOfFull >= 0.5f)
             {
                 winner = "joueur 1";
                 Debug.Log(winner);
@@ -62,6 +61,8 @@ public class Timer : MonoBehaviour
                 Debug.Log(winner);
                 Debug.Log(PublicVar.GameDuration);
             }
+            SceneManager.LoadScene("finalScene");
+      
         }
     }
     
