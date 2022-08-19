@@ -73,6 +73,7 @@ public class WeaponController : MonoBehaviour
                                 lastCellRoof.GetComponent<roofCellManager>().isEmpty = true;
                                 StartCoroutine(lastCellRoof.GetComponent<roofCellManager>().startCoolDown());
                                 playerController.target = spawned;
+                                GameObject.Find("EnfantDoublageManager").GetComponent<EnfantDoublage>().KidSound();
                             }
                             break;
                         }
