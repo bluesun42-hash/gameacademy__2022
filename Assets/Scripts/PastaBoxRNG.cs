@@ -6,6 +6,7 @@ using System;
 public class PastaBoxRNG : MonoBehaviour
 {
     public GameObject obj;
+    public int log;
 
     int[] xx = new int[2];
     int[] yy = new int[2];
@@ -18,18 +19,19 @@ public class PastaBoxRNG : MonoBehaviour
     
     void Start()
     {
-        xx[0] = 42;
-        xx[1] = -28;
-        yy[0] = 28;
-        yy[1] = -46;
+        xx[0] = 13;
+        xx[1] =-2;
+        yy[0] = 6;
+        yy[1] = -6;
 
         x = rng.Next(xx[1], xx[0]);
         y = rng.Next(yy[1], yy[0]);
 
         Debug.Log("X:" + x + " Y:" + y);
-        obj.transform.position = new Vector2(x,y);
+        Debug.Log(log);
+        obj.transform.position = new Vector3(x,y,-2);
 
-        if (rng.Next(1, 69) == 42)
+        if (rng.Next(1, 11) == 5)
         {
             obj.SetActive(true);
         } else
