@@ -6,7 +6,7 @@ public class EnfantDoublage : MonoBehaviour
 {
     public Sound[] sounds;
 
-    Random rng = new Random;
+    
     public void KidSound()
     {
 
