@@ -1357,7 +1357,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.0680089, y: 0}
+  m_Offset: {x: -0.9790412, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1368,7 +1368,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.058018684, y: 1}
+  m_Size: {x: 0.23595405, y: 1}
   m_EdgeRadius: 0
 --- !u!50 &373929902
 Rigidbody2D:
@@ -1812,8 +1812,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -272, y: 198}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -260.16, y: 189.58}
+  m_SizeDelta: {x: 183.67, y: 46.84}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &467796847
 MonoBehaviour:
@@ -1828,7 +1828,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1837,7 +1837,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8953e9339d86439468164cadf5d0d310, type: 3}
-    m_FontSize: 29
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -1848,7 +1848,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: time remaining
+  m_Text: 'time remaining :'
 --- !u!222 &467796848
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3122,7 +3122,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.019694924, y: -0.56095827}
+  m_Offset: {x: -0.019694924, y: -0.57234144}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3133,7 +3133,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.0746334, y: 0.15796328}
+  m_Size: {x: 2.0746334, y: 0.13519692}
   m_EdgeRadius: 0
 --- !u!50 &799983638
 Rigidbody2D:
@@ -4560,11 +4560,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: MainTheme
-    clip: {fileID: 8300000, guid: 70e4c74e4d764b2419ee7a81ba3e0f55, type: 3}
+    clip: {fileID: 8300000, guid: ed78c3d75e50d3541a917ebd51dae86d, type: 3}
     volume: 1
     source: {fileID: 0}
   - name: ZickZack
-    clip: {fileID: 8300000, guid: eac84fdaaf2074d13b6597fd5bedf201, type: 3}
+    clip: {fileID: 0}
     volume: 0
     source: {fileID: 0}
 --- !u!4 &1047803066
@@ -6565,7 +6565,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.048150778, y: 0.5463048}
+  m_Offset: {x: -0.048150778, y: 0.53239185}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6576,7 +6576,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.1195073, y: 0.13052371}
+  m_Size: {x: 2.1195073, y: 0.15834963}
   m_EdgeRadius: 0
 --- !u!50 &1371889598
 Rigidbody2D:
@@ -6614,7 +6614,6 @@ GameObject:
   - component: {fileID: 1402792970}
   - component: {fileID: 1402792969}
   - component: {fileID: 1402792968}
-  - component: {fileID: 1402792975}
   m_Layer: 0
   m_Name: player2
   m_TagString: player2
@@ -6800,32 +6799,6 @@ MonoBehaviour:
   playerIndex: 1
   weaponController: {fileID: 1402792970}
   target: {fileID: 0}
---- !u!61 &1402792975
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1402792966}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6.4, y: 6.4}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 6.4, y: 6.4}
-  m_EdgeRadius: 0
 --- !u!1 &1418557014
 GameObject:
   m_ObjectHideFlags: 0
@@ -7000,7 +6973,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.9985987, y: 0}
+  m_Offset: {x: 0.9767596, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -7011,7 +6984,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.3585022, y: 1}
+  m_Size: {x: 0.4021803, y: 1}
   m_EdgeRadius: 0
 --- !u!50 &1420986342
 Rigidbody2D:
@@ -7771,7 +7744,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controllerIndex: 0
   speed: 350
-  targetSpeed: 600
+  targetSpeed: 450
   direction: {x: 0, y: 0}
   rb: {fileID: 1564294879}
   rotationSpeed: 0
@@ -7886,8 +7859,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -122.999985, y: 198}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -89.12, y: 189.58}
+  m_SizeDelta: {x: 183.67, y: 46.84}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1569577927
 MonoBehaviour:
@@ -7902,7 +7875,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7911,7 +7884,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8953e9339d86439468164cadf5d0d310, type: 3}
-    m_FontSize: 29
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -9474,6 +9447,7 @@ MonoBehaviour:
   minutes: 0
   timeText: {fileID: 1569577927}
   GlobalCellManagerScript: {fileID: 949435756}
+  isVisible: 0
 --- !u!1 &1809622961
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,13 +20,13 @@ public class TargetController : MonoBehaviour
         Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), GetComponent<Collider2D>());
     }
 
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    if (collision.transform.CompareTag("player2"))
-    //    {
-    //        Physics2D.IgnoreCollision(collision.collider, GetComponent<Collider2D>());
-    //    }
-    //}
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.transform.CompareTag("player2"))
+       {
+            Physics2D.IgnoreCollision(collision.collider, GetComponent<Collider2D>());
+      }
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.transform.parent == gridManager)
