@@ -1761,7 +1761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6471,8 +6471,8 @@ MonoBehaviour:
   targetPrefab: {fileID: 0}
   targetSpawn: {fileID: 926936197}
   playerController: {fileID: 1402792971}
-  roofCellScript: {fileID: 0}
   lastCellRoof: {fileID: 0}
+  actionCooldown: 1
 --- !u!114 &1402792971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6494,7 +6494,6 @@ MonoBehaviour:
   playerIndex: 1
   weaponController: {fileID: 1402792970}
   target: {fileID: 0}
-  roofCellManagerScript: {fileID: 0}
 --- !u!50 &1402792972
 Rigidbody2D:
   serializedVersion: 4
@@ -7543,8 +7542,8 @@ MonoBehaviour:
   targetPrefab: {fileID: 8594266626563220174, guid: 507c309ea316aa345a08d332ef06c496, type: 3}
   targetSpawn: {fileID: 926936197}
   playerController: {fileID: 1564294878}
-  roofCellScript: {fileID: 0}
   lastCellRoof: {fileID: 0}
+  actionCooldown: 0
 --- !u!114 &1564294878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7566,7 +7565,6 @@ MonoBehaviour:
   playerIndex: 0
   weaponController: {fileID: 1564294877}
   target: {fileID: 0}
-  roofCellManagerScript: {fileID: 0}
 --- !u!50 &1564294879
 Rigidbody2D:
   serializedVersion: 4
@@ -7691,7 +7689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -10858,7 +10856,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2145599226}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 108.73}
+  m_LocalPosition: {x: 0, y: 0, z: -14.9}
   m_LocalScale: {x: 0.04692087, y: 0.04692087, z: 0.04692087}
   m_ConstrainProportionsScale: 0
   m_Children:
