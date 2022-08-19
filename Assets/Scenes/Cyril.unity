@@ -770,6 +770,79 @@ MonoBehaviour:
   spriteRendererCell: {fileID: 0}
   randValue: 0
   probability: 50
+--- !u!1 &256958065
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 256958067}
+  - component: {fileID: 256958066}
+  m_Layer: 0
+  m_Name: EnfantDoublageManagerfin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &256958066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256958065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebb488ec6883bf84ca1e5fa2adf7f84e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: 1
+    clip: {fileID: 8300000, guid: 20e9baada7be2a640aa1b05270f78457, type: 3}
+    volume: 0
+    source: {fileID: 0}
+  - name: 2
+    clip: {fileID: 8300000, guid: 8835e30a56b3c124fb28d7f9248ae8de, type: 3}
+    volume: 0
+    source: {fileID: 0}
+  - name: 3
+    clip: {fileID: 8300000, guid: 671bb02d91c79ad4797d36bac18d1b96, type: 3}
+    volume: 0
+    source: {fileID: 0}
+  - name: 4
+    clip: {fileID: 8300000, guid: 2a0084306b65ce344a920e1cb84476e2, type: 3}
+    volume: 0
+    source: {fileID: 0}
+  - name: 5
+    clip: {fileID: 8300000, guid: 47a93372b55a9b5488a205254eb181b4, type: 3}
+    volume: 0
+    source: {fileID: 0}
+  - name: 6
+    clip: {fileID: 8300000, guid: e332aedcd08a1c44fafc855e683e9f08, type: 3}
+    volume: 0
+    source: {fileID: 0}
+  - name: 7
+    clip: {fileID: 8300000, guid: 63a6ab95aacc1514189b59eb2d44c696, type: 3}
+    volume: 0
+    source: {fileID: 0}
+--- !u!4 &256958067
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256958065}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.8633869, y: -1.170952, z: 4.202712}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &296083372
 GameObject:
   m_ObjectHideFlags: 0
@@ -4124,6 +4197,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 270099749cb570341bd095b7e0bb357d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sounds:
+  - name: 1
+    clip: {fileID: 8300000, guid: e142ec6af1695084cb678b75abcd3a05, type: 3}
+    volume: 0
+    source: {fileID: 0}
+  - name: 2
+    clip: {fileID: 8300000, guid: 3f6bd2387e32dfd4988ee2ef96426a01, type: 3}
+    volume: 0
+    source: {fileID: 0}
+  - name: 3
+    clip: {fileID: 8300000, guid: c461193285942a04799037d64bdde1ab, type: 3}
+    volume: 0
+    source: {fileID: 0}
+  - name: 4
+    clip: {fileID: 8300000, guid: 093af18e561f2754b9d4dd706373d101, type: 3}
+    volume: 0
+    source: {fileID: 0}
 --- !u!4 &983954897
 Transform:
   m_ObjectHideFlags: 0
@@ -8017,71 +8107,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: 1
-    clip: {fileID: 8300000, guid: 9bcd37d578201dc40bf1a8f1ace8eb3c, type: 3}
+    clip: {fileID: 8300000, guid: 34da8018bafb4684ba8664099a45417b, type: 3}
     volume: 0
     source: {fileID: 0}
   - name: 2
-    clip: {fileID: 8300000, guid: 568bb6675f759894980d52e2dffb98c1, type: 3}
+    clip: {fileID: 8300000, guid: fdc335918db68714d81920f6057aab11, type: 3}
     volume: 0
     source: {fileID: 0}
   - name: 3
-    clip: {fileID: 8300000, guid: ad3bc6be64e2f264780facfdb46ffff5, type: 3}
+    clip: {fileID: 8300000, guid: 854206b59a87dfb409552c069d4a6998, type: 3}
     volume: 0
     source: {fileID: 0}
   - name: 4
-    clip: {fileID: 8300000, guid: c0f86e9aa892b2e4dbb1b592af6b1040, type: 3}
+    clip: {fileID: 8300000, guid: 8499a4e72ac980a4f80c66921eb3451f, type: 3}
     volume: 0
     source: {fileID: 0}
   - name: 5
-    clip: {fileID: 8300000, guid: 322cadc8cf2ba614fb4ee7c26f7f8326, type: 3}
+    clip: {fileID: 8300000, guid: 673fe5cab1477db448907dc0fdbdb55e, type: 3}
     volume: 0
     source: {fileID: 0}
   - name: 6
-    clip: {fileID: 8300000, guid: 7390ba590a173ef48aa3fa94a0d5bfbd, type: 3}
+    clip: {fileID: 8300000, guid: 7b7b637b8a9325245a3b6feb586056a2, type: 3}
     volume: 0
     source: {fileID: 0}
   - name: 7
-    clip: {fileID: 8300000, guid: 36ee9b9dad9146044b7e30d858fb9001, type: 3}
-    volume: 0
-    source: {fileID: 0}
-  - name: 8
-    clip: {fileID: 8300000, guid: 0c2f91df870a7f840940a916916e67ae, type: 3}
-    volume: 0
-    source: {fileID: 0}
-  - name: 9
-    clip: {fileID: 8300000, guid: 0c7d0a19cea28ed4a8259a827244079d, type: 3}
-    volume: 0
-    source: {fileID: 0}
-  - name: 10
-    clip: {fileID: 8300000, guid: 50a1262dda5a47e4cba42bd096101d4b, type: 3}
-    volume: 0
-    source: {fileID: 0}
-  - name: 11
-    clip: {fileID: 8300000, guid: fa8af2253e5b6774392dda8451f323d9, type: 3}
-    volume: 0
-    source: {fileID: 0}
-  - name: 12
-    clip: {fileID: 8300000, guid: cd47fefcf77aeee48a00cbc28dd2e8ca, type: 3}
-    volume: 0
-    source: {fileID: 0}
-  - name: 13
-    clip: {fileID: 8300000, guid: c0ee39c08cc42714c80d2034295b2c28, type: 3}
-    volume: 0
-    source: {fileID: 0}
-  - name: 14
-    clip: {fileID: 8300000, guid: b7c1fccedf4cec445b1594f3b1a332f1, type: 3}
-    volume: 0
-    source: {fileID: 0}
-  - name: 15
-    clip: {fileID: 8300000, guid: d650bc01d905f3343a4ad5209234aa3a, type: 3}
-    volume: 0
-    source: {fileID: 0}
-  - name: 16
-    clip: {fileID: 8300000, guid: ffbe58a86adcdd042be250d92f12b5b7, type: 3}
-    volume: 0
-    source: {fileID: 0}
-  - name: 17
-    clip: {fileID: 8300000, guid: 385ac5caf59f8f2438a066118f513251, type: 3}
+    clip: {fileID: 8300000, guid: 63a6ab95aacc1514189b59eb2d44c696, type: 3}
     volume: 0
     source: {fileID: 0}
 --- !u!4 &1585604131

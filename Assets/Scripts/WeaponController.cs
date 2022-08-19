@@ -39,6 +39,7 @@ public class WeaponController : MonoBehaviour
                 {
                     case 0:
                         {
+                            GameObject.Find("EnfantDoublageManagerfin").GetComponent<EnfantDoublage>().KidSound();
                             isTargetSpawned = false;
                             isInAction = false;
                             Debug.Log(cellManager);
@@ -94,6 +95,7 @@ public class WeaponController : MonoBehaviour
     }
     private IEnumerator RemoveSnow()
     {
+        GameObject.Find("VieuxDoublageManager").GetComponent<VieuxDoublage>().OldSound();
         yield return new WaitForSeconds(actionCooldown);
         if (!cellManager.isEmpty)
         {

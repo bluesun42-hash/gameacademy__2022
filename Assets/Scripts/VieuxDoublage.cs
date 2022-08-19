@@ -1,18 +1,35 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class VieuxDoublage : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Sound[] sounds;
+    Sound s;
+
+    System.Random rng = new System.Random();
+
+    private void Start()
     {
-        
+        foreach (Sound s in sounds)
+        {
+            s.source = gameObject.AddComponent<AudioSource>();
+            s.source.clip = s.clip;
+
+            s.source.volume = 1;
+            s.source.pitch = 1;
+            s.source.loop = false;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Play(string name)
     {
-        
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        s.source.Play();
+    }
+    public void OldSound()
+    {
+        Play(rng.Next(1, 4).ToString());
     }
 }
