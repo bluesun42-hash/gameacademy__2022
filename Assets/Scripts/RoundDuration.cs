@@ -14,7 +14,7 @@ public class RoundDuration : MonoBehaviour
     {
         Debug.Log("time "+PublicVar.GameDuration);
         slider.value = (PublicVar.GameDuration-90)/30;
-        PublicVar.GameDuration = slider.value * 30 + 90;
+        PublicVar.GameDuration = slider.value * 30 + 60;
     }
 
     public void SliderUpDate()

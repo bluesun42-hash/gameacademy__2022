@@ -6,6 +6,6 @@ public class PublicVar : MonoBehaviour
 {
     public static float MasterVol = 1;
     public static float MusicVol = 1;
-    public static float GameDuration = 180;
+    public static float GameDuration = 60;
     public static bool slideBool;
 }
