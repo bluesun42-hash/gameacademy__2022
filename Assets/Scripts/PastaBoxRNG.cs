@@ -29,7 +29,7 @@ public class PastaBoxRNG : MonoBehaviour
         Debug.Log("X:" + x + " Y:" + y);
         obj.transform.position = new Vector2(x,y);
 
-        if (rng.Next(1, 69) == 42)
+        if (rng.Next(1, 10) == 5)
         {
             obj.SetActive(true);
         } else
