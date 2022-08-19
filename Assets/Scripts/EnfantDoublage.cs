@@ -30,6 +30,6 @@ public class EnfantDoublage : MonoBehaviour
     }
     public void KidSound()
     {
-        Play(rng.Next(1,7).ToString());
+        Play(rng.Next(1,12).ToString());
     }
 }
