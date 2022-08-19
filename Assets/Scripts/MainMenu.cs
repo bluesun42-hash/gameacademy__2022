@@ -42,6 +42,7 @@ public class MainMenu : MonoBehaviour
     {
         AudioListener.volume = PublicVar.MasterVol;
         Debug.Log(AudioListener.volume);
+        Time.timeScale = 1;
         SceneManager.LoadScene("SceneMenu");
     }
 
