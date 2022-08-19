@@ -14,6 +14,7 @@ public class roofCellManager : MonoBehaviour
 
     private void Start()
     {
+        coolDownTime = Random.Range(20, 51);
        randValue = Random.Range(0, 101);
         if (randValue < probability)
         {
