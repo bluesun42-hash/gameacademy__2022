@@ -30,6 +30,6 @@ public class VieuxDoublage : MonoBehaviour
     }
     public void OldSound()
     {
-        Play(rng.Next(0, 5).ToString());
+        Play(rng.Next(1, 5).ToString());
     }
 }
