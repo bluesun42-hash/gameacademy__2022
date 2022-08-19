@@ -5,18 +5,18 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    [HideInInspector]
     public int controllerIndex;
     public int speed = 200;
     public int targetSpeed = 300;
+    [HideInInspector]
     public Vector2 direction;
     public Rigidbody2D rb;
     public float rotationSpeed;
     public int playerIndex;
     public WeaponController weaponController;
     public GameObject target;
-    public roofCellManager roofCellManagerScript;
     private Animator animator;
-    private bool lastActionState;
 
   private void Start() {
             animator = GetComponent<Animator>();

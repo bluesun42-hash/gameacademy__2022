@@ -6,18 +6,24 @@ using UnityEngine.InputSystem;
 public class WeaponController : MonoBehaviour
 {
     //player 2(D�blayeur)
+    [HideInInspector]
     public CellManager cellManager;
+    [HideInInspector]
     public GameObject lastCell;
     private GlobalCellManager globalCellManager;
     public int playerIndex;
+    [HideInInspector]
     public int controllerIndex;
+    [HideInInspector]
     public bool isInAction = false;
+    [HideInInspector]
     public bool isTargetSpawned = false;
     public GameObject targetPrefab;
     public GameObject targetSpawn;
     public PlayerController playerController;
-    public roofCellManager roofCellScript;
+    [HideInInspector]
     public GameObject lastCellRoof;
+    public int actionCooldown;
 
     private void Start()
     {
@@ -83,7 +89,7 @@ public class WeaponController : MonoBehaviour
     }
     private IEnumerator RemoveSnow()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(actionCooldown);
         if (!cellManager.isEmpty)
         {
             globalCellManager.fullCells--;
