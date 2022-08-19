@@ -14,10 +14,7 @@ public class Timer : MonoBehaviour
     static public string winner;
     public GlobalCellManager GlobalCellManagerScript;
 
-    private void Awake()
-    {
-        Debug.Log("1 " + PublicVar.GameDuration);
-    }
+  
     private void Start()
     {
         Debug.Log("2 " + PublicVar.GameDuration);
