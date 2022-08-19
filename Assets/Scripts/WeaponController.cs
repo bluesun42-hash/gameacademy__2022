@@ -42,12 +42,13 @@ public class WeaponController : MonoBehaviour
                             isTargetSpawned = false;
                             isInAction = false;
                             Debug.Log(cellManager);
+                            GameObject.FindGameObjectWithTag("ballSpawn").GetComponent<ballSpawn>().isShooting = true;
                             if (cellManager.isEmpty)
                             {
                                 globalCellManager.fullCells++;
-                               // cellManager.isEmpty = false;
+                         
                                 
-                                GameObject.FindGameObjectWithTag("ballSpawn").GetComponent<ballSpawn>().isShooting = true;
+                                
                                 
                                 
                                 
@@ -64,7 +65,7 @@ public class WeaponController : MonoBehaviour
                 {
                     case 0:
                         {
-                            if (!isTargetSpawned)
+                            if (!isTargetSpawned && !lastCellRoof.GetComponent<roofCellManager>().isEmpty)
                             {
                                 isInAction = true;
                                 isTargetSpawned = true;
