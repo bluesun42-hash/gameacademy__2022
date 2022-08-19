@@ -13,14 +13,14 @@ public class RoundDuration : MonoBehaviour
     private void Start()
     {
         Debug.Log("time "+PublicVar.GameDuration);
-        slider.value = (PublicVar.GameDuration-90)/30;
+        slider.value = (PublicVar.GameDuration-60)/30;
         PublicVar.GameDuration = slider.value * 30 + 60;
     }
 
     public void SliderUpDate()
     {
-        PublicVar.GameDuration = slider.value * 30 + 90;
-        Debug.Log((slider.value+1)%2);
-        text.text = Mathf.Floor((slider.value * 30 + 90) / 60) + ":" + (slider.value+1)%2 * 30;
+        PublicVar.GameDuration = slider.value * 30 + 60;
+        Debug.Log((slider.value+2)%2);
+        text.text = Mathf.Floor((slider.value * 30 + 60) / 60) + ":" + ((slider.value+2)%2 * 30)/10 + "0";
     }
 }
