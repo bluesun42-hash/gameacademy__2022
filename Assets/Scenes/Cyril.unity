@@ -4516,11 +4516,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: MainTheme
-    clip: {fileID: 8300000, guid: ed78c3d75e50d3541a917ebd51dae86d, type: 3}
+    clip: {fileID: 8300000, guid: 70e4c74e4d764b2419ee7a81ba3e0f55, type: 3}
     volume: 1
     source: {fileID: 0}
   - name: ZickZack
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: eac84fdaaf2074d13b6597fd5bedf201, type: 3}
     volume: 0
     source: {fileID: 0}
 --- !u!4 &1047803066

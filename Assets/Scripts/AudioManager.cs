@@ -26,22 +26,25 @@ public class AudioManager : MonoBehaviour
     
     public void IncreaseAndPlay(string name)
     {
+        try
+        {
         Sound s = Array.Find(sounds, sound => sound.name == name);
         s.source.volume = volumeIncrease;
         s.source.Play();
 
         //Musique passe de 0 a 1 en 3min.
-        StartCoroutine(WaitAndIncreaseVolume(s, 1.8f));
+        StartCoroutine(WaitAndIncreaseVolume(s, PublicVar.GameDuration*0.8f, 0.5f));
+
+        }
+        catch { }
     }
 
 
-    private IEnumerator WaitAndIncreaseVolume(Sound s,float waitTime)
+    private IEnumerator WaitAndIncreaseVolume(Sound s,float waitTime, float up)
     {
-        while(true)
-        {
-            s.source.volume += 0.01f;
             yield return new WaitForSeconds(waitTime);
-        }
+                    s.source.volume += up;
+        StartCoroutine(WaitAndIncreaseVolume(s, 1, 0.1f));
 
     }
 
