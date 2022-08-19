@@ -6483,7 +6483,7 @@ GameObject:
   - component: {fileID: 1402792967}
   - component: {fileID: 1402792973}
   - component: {fileID: 1402792972}
-  - component: {fileID: 1402792971}
+  - component: {fileID: 1402792974}
   - component: {fileID: 1402792970}
   - component: {fileID: 1402792969}
   - component: {fileID: 1402792968}
@@ -6575,29 +6575,9 @@ MonoBehaviour:
   isTargetSpawned: 0
   targetPrefab: {fileID: 0}
   targetSpawn: {fileID: 926936197}
-  playerController: {fileID: 1402792971}
+  playerController: {fileID: 1402792974}
   lastCellRoof: {fileID: 0}
   actionCooldown: 1
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1402792966}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c58e6afc5d184482cb4ac6481e1b4762, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controllerIndex: 0
-  speed: 200
-  targetSpeed: 300
-  direction: {x: 0, y: 0}
-  rb: {fileID: 1402792972}
-  rotationSpeed: 0
-  playerIndex: 1
-  weaponController: {fileID: 1402792970}
-  target: {fileID: 0}
 --- !u!50 &1402792972
 Rigidbody2D:
   serializedVersion: 4
@@ -6671,6 +6651,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1402792974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402792966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c58e6afc5d184482cb4ac6481e1b4762, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerIndex: 0
+  speed: 500
+  targetSpeed: 300
+  direction: {x: 0, y: 0}
+  rb: {fileID: 1402792972}
+  rotationSpeed: 0
+  playerIndex: 1
+  weaponController: {fileID: 1402792970}
+  target: {fileID: 0}
 --- !u!1 &1418557014
 GameObject:
   m_ObjectHideFlags: 0
@@ -7661,7 +7662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controllerIndex: 0
-  speed: 200
+  speed: 500
   targetSpeed: 600
   direction: {x: 0, y: 0}
   rb: {fileID: 1564294879}

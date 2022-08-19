@@ -78,9 +78,12 @@ public class WeaponController : MonoBehaviour
                         }
                     case 1:
                         {
-                            isInAction = true;
-                           
-                            StartCoroutine(RemoveSnow());
+
+                            if (!cellManager.isEmpty)
+                            {
+                                isInAction = true;
+                                StartCoroutine(RemoveSnow());
+                            }
                             break;
                         }
                 }

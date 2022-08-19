@@ -9,7 +9,6 @@ public class PlayerController : MonoBehaviour
     public int controllerIndex;
     public int speed = 200;
     public int targetSpeed = 300;
-    [HideInInspector]
     public Vector2 direction;
     public Rigidbody2D rb;
     public float rotationSpeed;
@@ -45,7 +44,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             rb.velocity = Vector2.zero;
-            if (target) target.GetComponent<Rigidbody2D>().velocity = targetDirection * targetSpeed * Time.fixedDeltaTime;
+            if (target && playerIndex == 0) target.GetComponent<Rigidbody2D>().velocity = targetDirection * targetSpeed * Time.fixedDeltaTime;
         }
     }
     public void OnMove(InputAction.CallbackContext ctx)
