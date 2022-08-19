@@ -40,7 +40,7 @@ public class WeaponController : MonoBehaviour
                             if (cellManager.isEmpty)
                             {
                                 globalCellManager.fullCells++;
-                            //   cellManager.isEmpty = false;
+                         
                                 
                                 
                                 
@@ -59,7 +59,7 @@ public class WeaponController : MonoBehaviour
                 {
                     case 0:
                         {
-                            if (!isTargetSpawned)
+                            if (!isTargetSpawned && !lastCellRoof.GetComponent<roofCellManager>().isEmpty)
                             {
                                 isInAction = true;
                                 isTargetSpawned = true;
