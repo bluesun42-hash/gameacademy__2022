@@ -37,9 +37,11 @@ public class PauseMenu : MonoBehaviour
         {
             EnterVol = AudioListener.volume;
             AudioListener.volume *= 0.7f;
+            Time.timeScale = 0;
         } 
         else 
         {
+            Time.timeScale = 1;
             if (PublicVar.slideBool) 
             {
                 PublicVar.slideBool = !PublicVar.slideBool;
