@@ -7727,7 +7727,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controllerIndex: 0
   speed: 350
-  targetSpeed: 600
+  targetSpeed: 450
   direction: {x: 0, y: 0}
   rb: {fileID: 1564294879}
   rotationSpeed: 0

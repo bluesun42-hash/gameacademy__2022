@@ -13,6 +13,8 @@ public class Timer : MonoBehaviour
     public Text timeText;
     static public string winner;
     public GlobalCellManager GlobalCellManagerScript;
+    public bool isVisible;
+    
 
   
     private void Start()
@@ -23,6 +25,16 @@ public class Timer : MonoBehaviour
     }
     private void FixedUpdate()
     {
+       
+            StartCoroutine(blink());
+
+        
+
+
+
+
+
+
         if (timeValue > 0)
         {
             timeValue -= Time.fixedDeltaTime;
@@ -53,5 +65,24 @@ public class Timer : MonoBehaviour
         }
     }
     
-
+     IEnumerator blink()
+    {
+        yield return new WaitForSeconds(0.5f);
+        
+          if (timeValue <= 10 && isVisible && timeValue > 0)
+        {
+            timeText.color = new Color(0, 0, 0, 0);
+            isVisible = false;
+            StopAllCoroutines();
+         
+        }
+        else if (timeValue <= 10 && !isVisible && timeValue > 0)
+        {
+            timeText.color = Color.red;
+            isVisible = true;
+            StopAllCoroutines();
+           
+        }
+    
+    }
 }
