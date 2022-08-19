@@ -23,9 +23,18 @@ public class PastaBoxRNG : MonoBehaviour
         yy[0] = 28;
         yy[1] = -46;
 
-        x = rng.Next(xx[0], xx[1]);
-        y = rng.Next(yy[0], yy[1]);
+        x = rng.Next(xx[1], xx[0]);
+        y = rng.Next(yy[1], yy[0]);
 
+        Debug.Log("X:" + x + " Y:" + y);
         obj.transform.position = new Vector2(x,y);
+
+        if (rng.Next(1, 69) == 42)
+        {
+            obj.SetActive(true);
+        } else
+        {
+            obj.SetActive(false);
+        }
     }
 }
