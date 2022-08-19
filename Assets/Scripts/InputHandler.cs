@@ -35,4 +35,11 @@ public class InputHandler : MonoBehaviour
     FindObjectOfType<PauseMenu>()?.OpenCloseUi();
     
   }
+  public void OnMoveTarget(InputAction.CallbackContext ctx) 
+  {
+    if (playerController != null) 
+    {
+      playerController.OnMoveTarget(ctx);
+    }
+  }
 }

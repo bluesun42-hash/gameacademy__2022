@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     public WeaponController weaponController;
     public GameObject target;
     private Animator animator;
+    private Vector2 targetDirection;
 
   private void Start() {
             animator = GetComponent<Animator>();
@@ -44,12 +45,15 @@ public class PlayerController : MonoBehaviour
         else
         {
             rb.velocity = Vector2.zero;
-            if (target) target.GetComponent<Rigidbody2D>().velocity = direction * targetSpeed * Time.fixedDeltaTime;
+            if (target) target.GetComponent<Rigidbody2D>().velocity = targetDirection * targetSpeed * Time.fixedDeltaTime;
         }
     }
     public void OnMove(InputAction.CallbackContext ctx)
     {
         direction = ctx.ReadValue<Vector2>();
     }
-   
+    public void OnMoveTarget(InputAction.CallbackContext ctx) 
+    {
+        targetDirection = ctx.ReadValue<Vector2>();
+    }
 }
