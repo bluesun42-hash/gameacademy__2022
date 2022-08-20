@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class GlobalCellManager : MonoBehaviour
 {
-    public GameObject[] Cells;
+    
 
     public int cellAmount;
     public int fullCells;
     public float percentageOfFull;
     private void Start()
     {
-        cellAmount = Cells.Length;
+        cellAmount = 30;
     }
     private void FixedUpdate()
     {

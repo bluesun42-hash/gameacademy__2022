@@ -10,6 +10,7 @@ public class CellManager : MonoBehaviour
   private WeaponController weaponController2;
     public int randValue;
     public int probability;
+    public GlobalCellManager globalCellManagerScript;
 
     public void Start()
   {
@@ -22,6 +23,8 @@ public class CellManager : MonoBehaviour
         else
         {
             isEmpty = false;
+            globalCellManagerScript.fullCells++;
+            
         }
         spriteRendererCell = gameObject.GetComponent<SpriteRenderer>();
     weaponController1 = GameObject.FindGameObjectWithTag("player1").GetComponent<WeaponController>();

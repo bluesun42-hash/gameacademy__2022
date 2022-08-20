@@ -28,8 +28,8 @@ public class Timer : MonoBehaviour
        
             StartCoroutine(blink());
 
-        
 
+        Debug.Log(GlobalCellManagerScript.percentageOfFull);
 
 
 
@@ -55,7 +55,7 @@ public class Timer : MonoBehaviour
                 Debug.Log(winner);
                 Debug.Log(PublicVar.GameDuration);
             }
-            else
+            else if(GlobalCellManagerScript.percentageOfFull <= 0.5f)
             {
                 winner = "joueur 2";
                 Debug.Log(winner);
