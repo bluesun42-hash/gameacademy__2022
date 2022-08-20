@@ -4,17 +4,21 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class MainMenu : MonoBehaviour
 {
     public Text text;
     public Slider MasterSlider;
+    public GameObject playButton;
 
     string purcent;
 
     private void Start()
     {
         MasterSlider.value = PublicVar.MasterVol * 100;
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(playButton);
     }
 
     public void MasterSliderUpDate()
