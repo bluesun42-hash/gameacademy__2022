@@ -546,6 +546,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 0}
   MasterSlider: {fileID: 1096957904}
+  playButton: {fileID: 0}
 --- !u!114 &120539550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1154,7 +1155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 797352802}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &333719147
@@ -3028,6 +3029,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 0}
   MasterSlider: {fileID: 1096957904}
+  playButton: {fileID: 0}
 --- !u!114 &797352805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5910,6 +5912,7 @@ MonoBehaviour:
   obj: {fileID: 593901930}
   slider2: {fileID: 1489605496}
   text: {fileID: 1583325764}
+  backToMenu: {fileID: 797352802}
 --- !u!4 &1174192119
 Transform:
   m_ObjectHideFlags: 0
@@ -10139,6 +10142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 0}
   MasterSlider: {fileID: 1096957904}
+  playButton: {fileID: 0}
 --- !u!114 &2032341259
 MonoBehaviour:
   m_ObjectHideFlags: 0

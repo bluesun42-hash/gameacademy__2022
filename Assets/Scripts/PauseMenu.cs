@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class PauseMenu : MonoBehaviour
     public Slider slider2;
     public Text text;
     float EnterVol;
+    public GameObject backToMenu;
+    
 
     bool it = true;
     bool slide;
@@ -26,6 +29,8 @@ public class PauseMenu : MonoBehaviour
         MainTheme = AudioSource[0];
         MainTheme.volume = PublicVar.MusicVol;
         ZickZack = AudioSource[1];
+      
+        Debug.Log(EventSystem.current);
     }
 
     public void OpenCloseUi()
